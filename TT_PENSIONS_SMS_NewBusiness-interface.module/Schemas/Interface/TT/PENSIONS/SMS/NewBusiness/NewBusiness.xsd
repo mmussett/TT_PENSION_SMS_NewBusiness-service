@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:api="http://www.royallondon.com/xsd/resource/util/csf/api/v1" xmlns:head="http://tns.tibco.com/bw/REST" xmlns:newBus="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness/newbusinesscommon" xmlns:tns="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness" elementFormDefault="qualified" targetNamespace="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness">
+	
+	<import namespace="http://tns.tibco.com/bw/REST"/>
+    <import namespace="http://www.royallondon.com/xsd/resource/util/csf/api/v1"/>
+    <import namespace="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness/newbusinesscommon" schemaLocation="NewBusinessCommon.xsd"/>
+    
+    <complexType name="FindFlexibleAccessInstructionsRequestType">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:NewBusinessId"/>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:PolicyId"/>
+    	</sequence>
+    </complexType>
+
+    <complexType name="FindFlexibleAccessInstructionsResponseType">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccessInstructions"/>
+    	</sequence>
+    </complexType>
+
+    <complexType name="CreateFlexibleAccessInstructionRequestType">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:NewBusinessId"/>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccessInstruction"/>
+    	</sequence>
+    </complexType>
+
+    <complexType name="CreateFlexibleAccessInstructionResponseType">
+        <sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:Identifiable"/>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ModifyFlexibleAccessInstructionRequestType">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:NewBusinessId"/>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccessInstructionId"/>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccessInstruction"/>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ModifyFlexibleAccessInstructionResponseType"/>
+
+    
+    <complexType name="DeleteFlexibleAccessInstructionRequestType">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:NewBusinessId"/>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccessInstructionId"/>
+    	</sequence>
+    </complexType>
+
+    <complexType name="DeleteFlexibleAccessInstructionResponseType"/>
+
+
+    <complexType name="FindFlexibleAccessRequestType">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:NewBusinessId"/>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="FindFlexibleAccessResponseType">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccessList"/>
+    	</sequence>
+    </complexType>
+
+    <complexType name="CreateFlexibleAccessRequestType">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:NewBusinessId"/>
+    		<element maxOccurs="1" minOccurs="0" ref="tns:AdviserIdList"/>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccess"/>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="CreateFlexibleAccessResponseType">
+           <sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:Identifiable"/>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ModifyFlexibleAccessRequestType">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:NewBusinessId"/>
+            <element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccess"/>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="ModifyFlexibleAccessResponseType"/>
+    
+    <complexType name="FindFlexibleAccessInstructionWithdrawalFundsRequestType">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:NewBusinessId"/>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccessInstructionId"/>
+    	</sequence>
+    </complexType>
+    
+    
+    <complexType name="FindFlexibleAccessInstructionWithdrawalFundsResponseType">
+    	<sequence>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:WithdrawalFundsList"/>
+    	</sequence>
+    </complexType>
+    <complexType name="CreateFlexibleAccessInstructionWithdrawalFundsRequestType">
+    	<sequence>
+    	<element maxOccurs="1" minOccurs="0" ref="newBus:NewBusinessId"/>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccessInstructionId"/>
+    		  <element  maxOccurs="1"  minOccurs="0" ref="newBus:WithdrawalInstructionType"/>
+            <element maxOccurs="1" minOccurs="0" ref="newBus:WithdrawalType"/>
+            <element maxOccurs="1" minOccurs="0" ref="newBus:FundId"/>
+    		</sequence>
+    </complexType>
+        <complexType name="CreateFlexibleAccessInstructionWithdrawalFundsResponseType">
+    	<sequence>
+    	<element maxOccurs="1" minOccurs="0" ref="newBus:WithdrawalFundIdentifiable"/>
+    		</sequence>
+    </complexType>
+    
+      <complexType name="UpdateFlexibleAccessInstructionWithdrawalFundsRequestType">
+    	<sequence>
+    	<element maxOccurs="1" minOccurs="0" ref="newBus:NewBusinessId"/>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccessInstructionId"/>
+    	    <element maxOccurs="1" minOccurs="0" ref="newBus:ID"/>
+             <element  maxOccurs="1"  minOccurs="0" ref="newBus:WithdrawalInstructionType"/>
+             <element maxOccurs="1" minOccurs="0" ref="newBus:WithdrawalType"/>
+             <element maxOccurs="1" minOccurs="0" ref="newBus:FundId"/>
+    		</sequence>
+    </complexType>
+    <complexType name="UpdateFlexibleAccessInstructionWithdrawalFundsResponseType"/>
+    	
+    	
+    <complexType name="DeleteFlexibleAccessInstructionWithdrawalFundsRequestType">
+    	<sequence>
+    	 	<element maxOccurs="1" minOccurs="0" ref="newBus:NewBusinessId"/>
+    		<element maxOccurs="1" minOccurs="0" ref="newBus:FlexibleAccessInstructionId"/>
+    	    <element maxOccurs="1" minOccurs="0" ref="newBus:ID"/>
+    		</sequence>
+    </complexType>
+    
+    <complexType name="DeleteFlexibleAccessInstructionWithdrawalFundsResponseType"/>
+    
+    
+    
+
+    <element name="FindFlexibleAccessInstructionWithdrawalFundsRequest" type="tns:FindFlexibleAccessInstructionWithdrawalFundsRequestType"/>
+    <element name="FindFlexibleAccessInstructionWithdrawalFundsResponse" type="tns:FindFlexibleAccessInstructionWithdrawalFundsResponseType"/>
+    
+    
+    <element name="FindFlexibleAccessInstructionsRequest" type="tns:FindFlexibleAccessInstructionsRequestType"/>
+    <element name="FindFlexibleAccessInstructionsResponse" type="tns:FindFlexibleAccessInstructionsResponseType"/>
+
+    <element name="CreateFlexibleAccessInstructionRequest" type="tns:CreateFlexibleAccessInstructionRequestType"/>
+    <element name="CreateFlexibleAccessInstructionResponse" type="tns:CreateFlexibleAccessInstructionResponseType"/>
+
+    <element name="ModifyFlexibleAccessInstructionRequest" type="tns:ModifyFlexibleAccessInstructionRequestType"/>
+    <element name="ModifyFlexibleAccessInstructionResponse" type="tns:ModifyFlexibleAccessInstructionResponseType"/>
+
+    <element name="DeleteFlexibleAccessInstructionRequest" type="tns:DeleteFlexibleAccessInstructionRequestType"/>
+    <element name="DeleteFlexibleAccessInstructionResponse" type="tns:DeleteFlexibleAccessInstructionResponseType"/>
+
+    <element name="FindFlexibleAccessRequest" type="tns:FindFlexibleAccessRequestType"/>
+    <element name="FindFlexibleAccessResponse" type="tns:FindFlexibleAccessResponseType"/>
+
+    <element name="CreateFlexibleAccessRequest" type="tns:CreateFlexibleAccessRequestType"/>
+    <element name="CreateFlexibleAccessResponse" type="tns:CreateFlexibleAccessResponseType"/>
+
+    <element name="ModifyFlexibleAccessRequest" type="tns:ModifyFlexibleAccessRequestType"/>
+    <element name="ModifyFlexibleAccessResponse" type="tns:ModifyFlexibleAccessResponseType"/>
+
+	<element name="AdviserIdList" type="string"/>
+	
+	<element name="CreateFlexibleAccessInstructionWithdrawalFundsRequest" type="tns:CreateFlexibleAccessInstructionWithdrawalFundsRequestType"/>
+    <element name="CreateFlexibleAccessInstructionWithdrawalFundsResponse" type="tns:CreateFlexibleAccessInstructionWithdrawalFundsResponseType"/>
+    
+    <element name="UpdateFlexibleAccessInstructionWithdrawalFundsRequest" type="tns:UpdateFlexibleAccessInstructionWithdrawalFundsRequestType"/>
+    <element name="UpdateFlexibleAccessInstructionWithdrawalFundsResponse" type="tns:UpdateFlexibleAccessInstructionWithdrawalFundsResponseType"/>
+    
+    <element name="DeleteFlexibleAccessInstructionWithdrawalFundsRequest" type="tns:DeleteFlexibleAccessInstructionWithdrawalFundsRequestType"/>
+    <element name="DeleteFlexibleAccessInstructionWithdrawalFundsResponse" type="tns:DeleteFlexibleAccessInstructionWithdrawalFundsResponseType"/>
+
+
+</schema>

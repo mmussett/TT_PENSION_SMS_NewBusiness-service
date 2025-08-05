@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_TaTuQMJWEeeP9rUUiv7rnA" targetNamespace="http://tns.tibco.com/bw/composite/TT_PENSIONS_SMS_NewBusiness-service.module" name="TT_PENSIONS_SMS_NewBusiness-service.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_TmOqYMJWEeeP9rUUiv7rnA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmOqYcJWEeeP9rUUiv7rnA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmYbYMJWEeeP9rUUiv7rnA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmYbYcJWEeeP9rUUiv7rnA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmYbYsJWEeeP9rUUiv7rnA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmiMYMJWEeeP9rUUiv7rnA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmiMYcJWEeeP9rUUiv7rnA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmiMYsJWEeeP9rUUiv7rnA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TmrWUMJWEeeP9rUUiv7rnA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_thNiwC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructions/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_uE6swC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructions/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_uS43UC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructions/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_04pqYC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructions/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_06ePUC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructions/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_08iE0C0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructions/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_BoBgAC0gEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructions/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6-CJsC0eEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstruction/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9RXeQC0eEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstruction/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_7UsWMC0eEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstruction/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_B7YWUC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstruction/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_B9DKQC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstruction/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_B-zdwC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstruction/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_CMHhAC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstruction/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_cuvrIC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccessInstruction/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_rCvVMC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccessInstruction/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_deuWkC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccessInstruction/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_30a38C0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccessInstruction/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_32AzYC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccessInstruction/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_331_YC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccessInstruction/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_CpaEgC0gEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccessInstruction/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_f99ZIC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstruction/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_rjobwC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstruction/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vXPQQC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstruction/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4NqeYC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstruction/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4PfqYC0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstruction/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_4Rjf4C0fEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstruction/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_B63jgC0gEeiCBYcFSIdRxg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstruction/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_RbRJIDJsEeiUs5W40L2uIA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccess/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_gKunMDJsEeiUs5W40L2uIA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccess/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_TEZDEDJsEeiUs5W40L2uIA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccess/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_UQm-kDJsEeiUs5W40L2uIA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccess/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_UScKkDJsEeiUs5W40L2uIA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccess/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_UUG-gDJsEeiUs5W40L2uIA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccess/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_asHCYDJsEeiUs5W40L2uIA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccess/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_TPnI8F3MEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccess/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_e1fm8F3MEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccess/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_r-uuEF3MEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccess/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_01SfEF3MEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccess/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_AhqmoF3NEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccess/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_KV0BQF3NEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccess/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WJeckF3NEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccess/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Thwo4F3MEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccess/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_fuUsYF3MEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccess/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_suf-IF3MEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccess/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_1x_X4F3MEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccess/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Cgu7YF3NEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccess/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_MfSPMF3NEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccess/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_XpAVoF3NEeiiKKJtnvaj5Q" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/ModifyFlexibleAccess/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_fbkeQODkEemg8PSE0hmK7w" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/StaticValue/domain" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_otQFAODkEemg8PSE0hmK7w" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/StaticValue/typeCode" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_zrubkAqjEeq1s4niIF2QOw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/StaticValue/timeInterval" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_uEZdgJEoEeq4WJ7U2pEpuQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/StaticValue/startTime" type="XMLSchema:dateTime" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_228moDYkEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/StaticValue/isAll" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_-La50DYkEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/StaticValue/optIn" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dDnEEDYnEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/StaticValue/logAfterLoadingCache" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dTkysDYnEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/StaticValue/logNoCacheLoaded" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_5dlJoAqcEeqrtqhlCwKGqw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/OperationName/findFlexibleAccessInstructions" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_CxgzIAqdEeqrtqhlCwKGqw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/OperationName/createFlexibleAccessInstruction" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_C5XHkAqdEeqrtqhlCwKGqw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/OperationName/modifyFlexibleAccessInstruction" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_C_PGEAqdEeqrtqhlCwKGqw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/OperationName/deleteFlexibleAccessInstruction" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DFVuEAqdEeqrtqhlCwKGqw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/OperationName/findFlexibleAccess" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_DS0wcAqdEeqrtqhlCwKGqw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/OperationName/createFlexibleAccess" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_KZbmwAqdEeqrtqhlCwKGqw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/OperationName/modifyFlexibleAccess" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_TvXDwDYiEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/RemoveLocalCache/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_YFJ_UDYiEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/RemoveLocalCache/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_X2AJADYiEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/RemoveLocalCache/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_gEAFMDYiEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/RemoveLocalCache/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_gNZ40DYiEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/RemoveLocalCache/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_gVdBkDYiEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/RemoveLocalCache/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_gcmLYDYiEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/RemoveLocalCache/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_J9p1IDZOEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_LleukDZOEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_KwZgsDZOEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aL0F0DZOEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aXJzIDZOEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ahbwgDZOEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aq_8MDZOEeykYvFOojwyKA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/FindFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Qo0loG7CEeybufpLE8BeIQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/UpdateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_rdmPsG7CEeybufpLE8BeIQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/UpdateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_RUJakG7CEeybufpLE8BeIQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/UpdateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3Nvc8G7CEeybufpLE8BeIQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/UpdateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3XIpgG7CEeybufpLE8BeIQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/UpdateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3d28kG7CEeybufpLE8BeIQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/UpdateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3fy2QG7CEeybufpLE8BeIQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/UpdateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_SiAGMG-xEeyk-p-OYwhqHQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_bjDP8G-xEeyk-p-OYwhqHQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_XjUrAG-xEeyk-p-OYwhqHQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aw6oYG-xEeyk-p-OYwhqHQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pBz7IG-xEeyk-p-OYwhqHQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pNtCEG-xEeyk-p-OYwhqHQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pUowgG-xEeyk-p-OYwhqHQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/CreateFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_xgbwAHKgEeyL98OIEnl0gA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_5VC70HKgEeyL98OIEnl0gA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6lTp0HKgEeyL98OIEnl0gA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_iqougHKiEeyL98OIEnl0gA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_iyseUHKiEeyL98OIEnl0gA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_i4XBcHKiEeyL98OIEnl0gA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kf4Y4HKiEeyL98OIEnl0gA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/DeleteFlexibleAccessInstructionWithdrawalFunds/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_PxiKYEDnEe6AlNeRSXVEsQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/CreateWithdrawalInstructions/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_gNm7QEDnEe6AlNeRSXVEsQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/CreateWithdrawalInstructions/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_f6OFMEDnEe6AlNeRSXVEsQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/CreateWithdrawalInstructions/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_86KWIEZUEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/CreateWithdrawalInstructions/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9NTUkEZUEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/CreateWithdrawalInstructions/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9dVUoEZUEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/CreateWithdrawalInstructions/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9o8uwEZUEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/CreateWithdrawalInstructions/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_ElDTUEZXEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/DeleteWithdrawalInstructions/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_RtEScEZXEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/DeleteWithdrawalInstructions/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_RLvHAEZXEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/DeleteWithdrawalInstructions/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WBacgEZXEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/DeleteWithdrawalInstructions/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WMBxEEZXEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/DeleteWithdrawalInstructions/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WY3TMEZXEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/DeleteWithdrawalInstructions/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Wh23IEZXEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/DeleteWithdrawalInstructions/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_dRDdkEZYEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/FindWithdrawalInstructions/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_hxwBkEZYEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/FindWithdrawalInstructions/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_hfWC8EZYEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/FindWithdrawalInstructions/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_rNyeMEZYEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/FindWithdrawalInstructions/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_rXOHAEZYEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/FindWithdrawalInstructions/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_rgohsEZYEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/FindWithdrawalInstructions/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_rqEKgEZYEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/FindWithdrawalInstructions/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_8N9dEEDmEe6AlNeRSXVEsQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/Operations/createWithdrawalInstructions" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_G5KIUEZ1Ee6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/Operations/deleteWithdrawalInstructions" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_HBvckEZ1Ee6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/Operations/findWithdrawalInstructions" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_HJitsEZ1Ee6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/Operations/modifyWithdrawalInstructions" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_qKmGYEZZEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/ModifyWithdrawalInstructions/ftlSubscriber/endpoint" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_r_GJ4EZZEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/ModifyWithdrawalInstructions/ftlSubscriber/contentMatcher" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_rvp_sEZZEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/ModifyWithdrawalInstructions/ftlSubscriber/advanced/subscriberName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_tQL-UEZZEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/ModifyWithdrawalInstructions/ftlSubscriber/advanced/durableName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_tYVNsEZZEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/ModifyWithdrawalInstructions/ftlSubscriber/advanced/ftlQueueDispatcherThreads" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_thaRMEZZEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/ModifyWithdrawalInstructions/ftlSubscriber/advanced/ftlQueueSize" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_tpyxIEZZEe6Su7m-eNzWiQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/ModifyWithdrawalInstructions/ftlSubscriber/advanced/activityWorkerThreads" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_GYNZwJx3EeiBWax7xxvI1A" name="ComponentActivator" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_GYNZwZx3EeiBWax7xxvI1A" processName="TT.PENSIONS.SMS.NewBusiness.Activator"/>
+  </sca:component>
+  <sca:component xmi:id="_I1B2EJ_bEei4Vbc0zac01A" name="ComponentCopyOfCreateFlexibleAccessInstruction" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_I1B2EZ_bEei4Vbc0zac01A" processName="TT.PENSIONS.SMS.NewBusiness.ftl.CreateFlexibleAccessInstruction"/>
+  </sca:component>
+  <sca:component xmi:id="_J9Ax0J_bEei4Vbc0zac01A" name="ComponentCopyOfModifyFlexibleAccessInstruction" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_J9Ax0Z_bEei4Vbc0zac01A" processName="TT.PENSIONS.SMS.NewBusiness.ftl.ModifyFlexibleAccessInstruction"/>
+  </sca:component>
+  <sca:component xmi:id="_LDX88J_bEei4Vbc0zac01A" name="ComponentCopyOfDeleteFlexibleAccessInstruction" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_LDX88Z_bEei4Vbc0zac01A" processName="TT.PENSIONS.SMS.NewBusiness.ftl.DeleteFlexibleAccessInstruction"/>
+  </sca:component>
+  <sca:component xmi:id="_N6-cMJ_bEei4Vbc0zac01A" name="ComponentCopyOfCreateFlexibleAccess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_N6-cMZ_bEei4Vbc0zac01A" processName="TT.PENSIONS.SMS.NewBusiness.ftl.CreateFlexibleAccess"/>
+  </sca:component>
+  <sca:component xmi:id="_OwdSsJ_bEei4Vbc0zac01A" name="ComponentCopyOfModifyFlexibleAccess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OwdSsZ_bEei4Vbc0zac01A" processName="TT.PENSIONS.SMS.NewBusiness.ftl.ModifyFlexibleAccess"/>
+  </sca:component>
+  <sca:component xmi:id="_k71UAEZ0EemB1KZHQSu0Xg" name="ComponentFindFlexibleAccessInstuctionsNew" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_k71UAUZ0EemB1KZHQSu0Xg" processName="TT.PENSIONS.SMS.NewBusiness.ftl.FindFlexibleAccessInstuctions"/>
+  </sca:component>
+  <sca:component xmi:id="_p2ecQFqwEemdW9tKxLJ0zA" name="ComponentCopyOfFindFlexibleAccess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_p2ecQVqwEemdW9tKxLJ0zA" processName="TT.PENSIONS.SMS.NewBusiness.ftl.FindFlexibleAccess"/>
+  </sca:component>
+  <sca:component xmi:id="_w8kaYODlEemg8PSE0hmK7w" name="Componenttimer" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_w8kaYeDlEemg8PSE0hmK7w" processName="TT.PENSIONS.SMS.NewBusiness.timer.setRefData"/>
+  </sca:component>
+  <sca:component xmi:id="_m3ZQIDYYEeykYvFOojwyKA" name="ComponentRemoveLocalCache" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_m3ZQITYYEeykYvFOojwyKA" processName="TT.PENSIONS.SMS.NewBusiness.ftl.RemoveLocalCache"/>
+  </sca:component>
+  <sca:component xmi:id="_Q0ZK0DZLEeykYvFOojwyKA" name="ComponentFindFlexibleAccessInstructionWithdrawalFunds" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Q0ZK0TZLEeykYvFOojwyKA" processName="TT.PENSIONS.SMS.NewBusiness.ftl.FindFlexibleAccessInstructionWithdrawalFunds"/>
+  </sca:component>
+  <sca:component xmi:id="_ofPywG7DEeybufpLE8BeIQ" name="ComponentUpdateFlexibleAccessInstructionWithdrawalFunds" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ofPywW7DEeybufpLE8BeIQ" processName="TT.PENSIONS.SMS.NewBusiness.ftl.UpdateFlexibleAccessInstructionWithdrawalFunds"/>
+  </sca:component>
+  <sca:component xmi:id="_Fj0jEG-yEeyk-p-OYwhqHQ" name="ComponentCreateFlexibleAccessInstructionWithdrawalFunds" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Fj0jEW-yEeyk-p-OYwhqHQ" processName="TT.PENSIONS.SMS.NewBusiness.ftl.CreateFlexibleAccessInstructionWithdrawalFunds"/>
+  </sca:component>
+  <sca:component xmi:id="_JZ9-sHKmEeyL98OIEnl0gA" name="ComponentDeleteFlexibleAccessInstructionWithdrawalFunds" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_JZ9-sXKmEeyL98OIEnl0gA" processName="TT.PENSIONS.SMS.NewBusiness.ftl.DeleteFlexibleAccessInstructionWithdrawalFunds"/>
+  </sca:component>
+  <sca:component xmi:id="_OODKYEyYEe6inpBED_35eQ" name="ComponentCreateWithdrawalInstructions" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_OODKYUyYEe6inpBED_35eQ" processName="TT.PENSIONS.SMS.NewBusiness_v3.ftl.CreateWithdrawalInstructions"/>
+  </sca:component>
+  <sca:component xmi:id="_TvPv0EydEe6xa99qBcKuTA" name="ComponentModifyWithdrawalInstructions" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_TvPv0UydEe6xa99qBcKuTA" processName="TT.PENSIONS.SMS.NewBusiness_v3.ftl.ModifyWithdrawalInstructions"/>
+  </sca:component>
+  <sca:component xmi:id="_otJtIEydEe6xa99qBcKuTA" name="ComponentDeleteWithdrawalInstructions" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_otJtIUydEe6xa99qBcKuTA" processName="TT.PENSIONS.SMS.NewBusiness_v3.ftl.DeleteWithdrawalInstructions"/>
+  </sca:component>
+  <sca:component xmi:id="_wxA14EydEe6xa99qBcKuTA" name="ComponentFindWithdrawalInstructions" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_wxA14UydEe6xa99qBcKuTA" processName="TT.PENSIONS.SMS.NewBusiness_v3.ftl.FindWithdrawalInstructions"/>
+  </sca:component>
+</sca:composite>

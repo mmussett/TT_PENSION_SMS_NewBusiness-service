@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:addr="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness/newbusinesscommon/v1" targetNamespace="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness/newbusinesscommon/v1" elementFormDefault="qualified">
+
+    <element name="WithdrawalInstruction" type="addr:WithdrawalInstructionType"/>
+    <complexType name="WithdrawalInstructionType">
+        <sequence>
+            <element ref="addr:Id" minOccurs="1" maxOccurs="1"/>
+            <element ref="addr:IncrementGroup" minOccurs="1" maxOccurs="1" />
+            <element ref="addr:NewBusinessId" minOccurs="0" maxOccurs="1"/>
+            <element ref="addr:OneOffWithdrawalAmount" minOccurs="0" maxOccurs="1"/>
+            <element ref="addr:RegularWithdrawalAmount" minOccurs="0" maxOccurs="1"/>
+            <element ref="addr:RegularWithdrawalActionType" minOccurs="0" maxOccurs="1"/>
+            <element ref="addr:RegularWithdrawalFrequencyType" minOccurs="0" maxOccurs="1"/>
+            <element ref="addr:RegularIncomePaymentDay" minOccurs="0" maxOccurs="1"/>
+            <element ref="addr:EscalationType" minOccurs="0" maxOccurs="1"/>
+            <element ref="addr:EscalationPercentage" minOccurs="0" maxOccurs="1"/>
+            <element ref="addr:PaymentBankAccountId" minOccurs="0" maxOccurs="1"/>
+        </sequence>
+    </complexType>
+
+    <element name="IncrementGroup" type="addr:IncrementGroupType"/>
+    <complexType name="IncrementGroupType">
+        <sequence>
+            <element name="Id" type="string"/>
+            <element ref="addr:IncrementGroupType" minOccurs="0"/>
+            <element ref="addr:ProductType" minOccurs="0"/>
+            <element ref="addr:ProductClassificationType" minOccurs="1"/>
+            <element ref="addr:PlanId" minOccurs="0"/>
+        </sequence>
+    </complexType>
+	
+	<element name="Id" type="string"/>
+    <element name="NewBusinessId" type="string"/>
+    <element name="WithdrawalInstructionId" type="string"/>
+    <element name="OneOffWithdrawalAmount" type="decimal"/>
+    <element name="ProductClassificationType" type="string"/>
+    <element name="RegularWithdrawalAmount" type="decimal"/>
+    <element name="RegularWithdrawalActionType" type="string"/>
+    <element name="RegularWithdrawalFrequencyType" type="string"/>
+    <element name="RegularIncomePaymentDay" type="int"/>
+    <element name="EscalationType" type="string"/>
+    <element name="EscalationPercentage" type="decimal"/>
+    <element name="PaymentBankAccountId" type="string"/>
+    <element name="IncrementGroupType" type="string"/>
+    <element name="ProductType" type="string"/>
+    <element name="PlanId" type="string"/>
+    <element name="IncrementGroupId" type="string"/>
+</schema>

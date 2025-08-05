@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="http://www.royallondon.com/xsd/service/pensions/sales/new-business/v7" xmlns:tns="http://www.royallondon.com/xsd/service/pensions/sales/new-business/v7" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="UpdateWithdrawalInstruction_PaymentBankAccountId" type="tns:UpdateWithdrawalInstruction_PaymentBankAccountId"/>
+    <xs:simpleType name="UpdateWithdrawalInstruction_PaymentBankAccountId">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="NewBusinessIdentifiable" type="tns:NewBusinessIdentifiable"/>
+    <xs:complexType name="NewBusinessIdentifiable">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="WithdrawalFund_WithdrawalType" type="tns:WithdrawalFund_WithdrawalType"/>
+    <xs:simpleType name="WithdrawalFund_WithdrawalType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="IncrementGroup_Id" type="tns:IncrementGroup_Id"/>
+    <xs:simpleType name="IncrementGroup_Id">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="WithdrawalInstruction_NewBusinessId" type="tns:WithdrawalInstruction_NewBusinessId"/>
+    <xs:simpleType name="WithdrawalInstruction_NewBusinessId">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="WithdrawalInstruction_PaymentBankAccountId" type="tns:WithdrawalInstruction_PaymentBankAccountId"/>
+    <xs:simpleType name="WithdrawalInstruction_PaymentBankAccountId">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="WithdrawalInstruction_RegularIncomePaymentDay" type="tns:WithdrawalInstruction_RegularIncomePaymentDay"/>
+    <xs:simpleType name="WithdrawalInstruction_RegularIncomePaymentDay">
+        <xs:restriction base="xs:int"/>
+    </xs:simpleType>
+    <xs:element name="IncrementGroup_PlanId" type="tns:IncrementGroup_PlanId"/>
+    <xs:simpleType name="IncrementGroup_PlanId">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="NewBusinessIncrement_GroupId" type="tns:NewBusinessIncrement_GroupId"/>
+    <xs:simpleType name="NewBusinessIncrement_GroupId">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="UpdateWithdrawalInstruction" type="tns:UpdateWithdrawalInstruction"/>
+    <xs:complexType name="UpdateWithdrawalInstruction">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="OneOffWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalFrequencyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentDay" type="xs:int"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentBankAccountId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateWithdrawalInstruction" type="tns:CreateWithdrawalInstruction"/>
+    <xs:complexType name="CreateWithdrawalInstruction">
+        <xs:sequence>
+            <xs:element name="IncrementGroupId" type="xs:string"/>
+            <xs:element minOccurs="0" name="OneOffWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalFrequencyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentDay" type="xs:int"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentBankAccountId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateWithdrawalInstruction_RegularIncomePaymentDay" type="tns:UpdateWithdrawalInstruction_RegularIncomePaymentDay"/>
+    <xs:simpleType name="UpdateWithdrawalInstruction_RegularIncomePaymentDay">
+        <xs:restriction base="xs:int"/>
+    </xs:simpleType>
+    <xs:element name="NewBusinessIncrement_NewBusinessId" type="tns:NewBusinessIncrement_NewBusinessId"/>
+    <xs:simpleType name="NewBusinessIncrement_NewBusinessId">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="WithdrawalInstruction_RegularWithdrawalActionType" type="tns:WithdrawalInstruction_RegularWithdrawalActionType"/>
+    <xs:simpleType name="WithdrawalInstruction_RegularWithdrawalActionType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="IncrementGroup_IncrementGroupType" type="tns:IncrementGroup_IncrementGroupType"/>
+    <xs:simpleType name="IncrementGroup_IncrementGroupType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="UpdateWithdrawalInstruction_RegularWithdrawalActionType" type="tns:UpdateWithdrawalInstruction_RegularWithdrawalActionType"/>
+    <xs:simpleType name="UpdateWithdrawalInstruction_RegularWithdrawalActionType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="WithdrawalInstruction_Id" type="tns:WithdrawalInstruction_Id"/>
+    <xs:simpleType name="WithdrawalInstruction_Id">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="CreateWithdrawalInstruction_RegularIncomePaymentDay" type="tns:CreateWithdrawalInstruction_RegularIncomePaymentDay"/>
+    <xs:simpleType name="CreateWithdrawalInstruction_RegularIncomePaymentDay">
+        <xs:restriction base="xs:int"/>
+    </xs:simpleType>
+    <xs:element name="WithdrawalFund_WithdrawalInstructionType" type="tns:WithdrawalFund_WithdrawalInstructionType"/>
+    <xs:simpleType name="WithdrawalFund_WithdrawalInstructionType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="NewBusinessIncrement_Id" type="tns:NewBusinessIncrement_Id"/>
+    <xs:simpleType name="NewBusinessIncrement_Id">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="WithdrawalInstruction" type="tns:WithdrawalInstruction"/>
+    <xs:complexType name="WithdrawalInstruction">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="IncrementGroup" type="tns:IncrementGroup"/>
+            <xs:element minOccurs="0" name="NewBusinessId" type="xs:string"/>
+            <xs:element minOccurs="0" name="OneOffWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalFrequencyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentDay" type="xs:int"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentBankAccountId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="WithdrawalFund_FundId" type="tns:WithdrawalFund_FundId"/>
+    <xs:simpleType name="WithdrawalFund_FundId">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="IncrementGroup_ProductClassificationType" type="tns:IncrementGroup_ProductClassificationType"/>
+    <xs:simpleType name="IncrementGroup_ProductClassificationType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="UpdateWithdrawalFund_WithdrawalInstructionType" type="tns:UpdateWithdrawalFund_WithdrawalInstructionType"/>
+    <xs:simpleType name="UpdateWithdrawalFund_WithdrawalInstructionType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="WithdrawalFund" type="tns:WithdrawalFund"/>
+    <xs:complexType name="WithdrawalFund">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="WithdrawalInstructionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="WithdrawalType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FundId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateWithdrawalInstruction_RegularWithdrawalActionType" type="tns:CreateWithdrawalInstruction_RegularWithdrawalActionType"/>
+    <xs:simpleType name="CreateWithdrawalInstruction_RegularWithdrawalActionType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="CreateWithdrawalInstruction_PaymentBankAccountId" type="tns:CreateWithdrawalInstruction_PaymentBankAccountId"/>
+    <xs:simpleType name="CreateWithdrawalInstruction_PaymentBankAccountId">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="NewBusinessProposalIncrement_PolicyId" type="tns:NewBusinessProposalIncrement_PolicyId"/>
+    <xs:simpleType name="NewBusinessProposalIncrement_PolicyId">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="IncrementGroup" type="tns:IncrementGroup"/>
+    <xs:complexType name="IncrementGroup">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementGroupType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProductType" type="xs:string"/>
+            <xs:element name="ProductClassificationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="PlanId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="NewBusinessIdentifiable_Id" type="tns:NewBusinessIdentifiable_Id"/>
+    <xs:simpleType name="NewBusinessIdentifiable_Id">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:element name="WithdrawalInstructions_WithdrawalInstruction" type="tns:WithdrawalInstructions_WithdrawalInstruction"/>
+    <xs:complexType name="WithdrawalInstructions_WithdrawalInstruction">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="WithdrawalInstructions_WithdrawalInstruction" type="tns:WithdrawalInstruction"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="WithdrawalInstructions" type="tns:WithdrawalInstructions"/>
+    <xs:complexType name="WithdrawalInstructions">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="WithdrawalInstruction" type="tns:WithdrawalInstruction"/>
+        </xs:sequence>
+    </xs:complexType>
+   </xs:schema>

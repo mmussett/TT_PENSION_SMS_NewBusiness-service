@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_5JQHMMJTEeeP9rUUiv7rnA" targetNamespace="http://tns.tibco.com/bw/composite/TT_PENSIONS_SMS_NewBusiness-implement.module" name="TT_PENSIONS_SMS_NewBusiness-implement.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_5MOisMJTEeeP9rUUiv7rnA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5MYTsMJTEeeP9rUUiv7rnA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5MYTscJTEeeP9rUUiv7rnA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5MYTssJTEeeP9rUUiv7rnA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5MhdoMJTEeeP9rUUiv7rnA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5MhdocJTEeeP9rUUiv7rnA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5MhdosJTEeeP9rUUiv7rnA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5Mhdo8JTEeeP9rUUiv7rnA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_5MhdpMJTEeeP9rUUiv7rnA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_syxf4FRlEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/disableConnectionPooling" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wK7ugFRlEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/maximumTotalConnections" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wMhC4FRlEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/maximumTotalConnectionsPerHostRoute" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wOIMcFRlEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/defaultHost" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wPzncFRlEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/idleConnectionTimeoutMs" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wRaJ8FRlEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/staleCheck" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_wTB6kFRlEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/defaultPort" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_kVbqsFRmEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/socketTimeoutMs" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_lMkuEFRmEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/acceptRedirect" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_lSJKkFRmEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/useSingleCookieHeader" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_lUDPEFRmEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/logRequestResponseTime" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_lVuqEFRmEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/connectionTimeoutMs" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_lXVzoFRmEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/retryCount" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_lZFgEFRmEeiLLuMVmxGfGg" name="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/useNonPreemptiveAuthentication" type="XMLSchema:boolean" scaext:simpleValue="false" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_n0sY4FUAEeiB--rGCbambg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/destinationName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_5ayB0GG6Eeme-84ZwZr3iw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/defaultExceptionType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6Dj5EGG6Eeme-84ZwZr3iw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/defaultRESTstatusCode" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6twFkGG6Eeme-84ZwZr3iw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/responseValue" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pfax4AqeEeqrtqhlCwKGqw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/bearer" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_Pv_6IGEoEemHVLu9cRdwfA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/errorCode101" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_WJiPEGEoEemHVLu9cRdwfA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/errorCode102" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_IXK-EGG6Eeme-84ZwZr3iw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/quoteId" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_IffMkGG6Eeme-84ZwZr3iw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/errorQuoteId" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_IlSSkGG6Eeme-84ZwZr3iw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/errorCode104" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_X9i2AGG6Eeme-84ZwZr3iw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/errorType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_X_unUGG6Eeme-84ZwZr3iw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/messageQuote" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_YBzq8GG6Eeme-84ZwZr3iw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/errorCode103" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_YD3gcGG6Eeme-84ZwZr3iw" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/invalidRequestMsg" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_zK6g8AIFEeq6uZwOtq789g" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/invalidRequestId" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3L_UQAIGEeq6uZwOtq789g" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/flexibleAccessInstructionId" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3QR-YAIGEeq6uZwOtq789g" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/invalidFlexibleAccessInstructionId" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3auT0AIGEeq6uZwOtq789g" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/invalidProposalId" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3GTtkAIHEeq6uZwOtq789g" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/invalidFlexId" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3P_1EAIHEeq6uZwOtq789g" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/error/invalidQuoteId" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_eOHZYOD0Eemo7awRsQJgug" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/domain" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_MMA9IOWaEem3wZr7bRqETQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/refdataTypeCode/typeCode" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_S26u4OWaEem3wZr7bRqETQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/refdataTypeCode/drawdownGovernanceTargetType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_S9DMEOWaEem3wZr7bRqETQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/refdataTypeCode/flexibleAccessType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_TEnMoOWaEem3wZr7bRqETQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/refdataTypeCode/escalationType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_TUPkEOWaEem3wZr7bRqETQ" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/refdataTypeCode/incrementGroupType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_-aqrIOWvEemrz574MU-fug" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/refdataTypeCode/regularIncomePaymentFrequencyType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_-oqD0OWvEemrz574MU-fug" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/refdataTypeCode/incomeTapreviewFrequencyType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6qbLgDclEeyxKqEz69wipg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/refdataTypeCode/productType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_6zXsIDclEeyxKqEz69wipg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/refdataTypeCode/incomeActionType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_1HstUDcmEeyxKqEz69wipg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/refdataTypeCode/typeCodeWITY" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_1Rs94DcmEeyxKqEz69wipg" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness/staticValue/refdataTypeCode/typeCodeWDRL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_vGPCEE49Ee62KIBCUCB8uA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/staticValue/typeCodes" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_uUe_kE4-Ee62KIBCUCB8uA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/staticValue/domain" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_81PXIE0pEe6xa99qBcKuTA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/staticValue/refDataTypeCode/productClassificationType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_H_7RcE0rEe6xa99qBcKuTA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/staticValue/refDataTypeCode/productType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_BwLpsE2DEe62KIBCUCB8uA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/staticValue/refDataTypeCode/withdrawalActionType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_mVJm8E49Ee62KIBCUCB8uA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/staticValue/refDataTypeCode/escalationType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_2j_NEE49Ee62KIBCUCB8uA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/staticValue/refDataTypeCode/incrementGroupType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3KQi4E49Ee62KIBCUCB8uA" name="/services/TT_PENSIONS_SMS_NewBusiness/NewBusiness_v3/staticValue/refDataTypeCode/withdrawalFrequencyType" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+</sca:composite>

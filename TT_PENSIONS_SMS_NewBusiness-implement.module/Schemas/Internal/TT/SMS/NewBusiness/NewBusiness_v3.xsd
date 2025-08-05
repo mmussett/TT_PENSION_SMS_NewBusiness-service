@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.royallondon.com/xsd/internal/tt/pensions/sms/newbusiness/v3"
+	elementFormDefault="qualified"
+	targetNamespace="http://www.royallondon.com/xsd/internal/tt/pensions/sms/newbusiness/v3">
+
+	
+	<complexType name="ExternalDataType">
+		<sequence>
+			<any processContents="skip" />
+		</sequence>
+	</complexType>
+
+	<element name="RequestData" type="tns:ExternalDataType" />
+	<element name="ResponseData" type="tns:ExternalDataType" />
+	<element name="NewBusinessId" type="string" />
+	<element name="WithdrawalInstructionId" type="string" />
+
+	<complexType name="FindWithdrawalInstructionsRequestType">
+		<sequence>
+			<element ref="tns:NewBusinessId" />
+		</sequence>
+	</complexType>
+
+	<complexType name="FindWithdrawalInstructionsResponseType">
+		<sequence>
+			<element ref="tns:ResponseData" />
+		</sequence>
+	</complexType>
+
+	<complexType name="CreateWithdrawalInstructionsRequestType">
+		<sequence>
+			<element ref="tns:NewBusinessId" />
+			<element ref="tns:RequestData" />
+		</sequence>
+	</complexType>
+
+	<complexType name="CreateWithdrawalInstructionsResponseType">
+		<sequence>
+			<element ref="tns:ResponseData" />
+		</sequence>
+	</complexType>
+
+	<complexType name="DeleteWithdrawalInstructionRequestType">
+		<sequence>
+			<element ref="tns:NewBusinessId" />
+			<element ref="tns:WithdrawalInstructionId" />
+		</sequence>
+	</complexType>
+
+	<complexType name="DeleteWithdrawalInstructionResponseType">
+		<sequence>
+
+		</sequence>
+	</complexType>
+
+	<complexType name="ModifyWithdrawalInstructionRequestType">
+		<sequence>
+			<element ref="tns:NewBusinessId" />
+			<element ref="tns:WithdrawalInstructionId" />
+			<element ref="tns:RequestData" />
+		</sequence>
+	</complexType>
+
+	<complexType name="ModifyWithdrawalInstructionResponseType">
+		<sequence>
+
+		</sequence>
+	</complexType>
+
+
+
+	<element name="FindWithdrawalInstructionsRequest"
+		type="tns:FindWithdrawalInstructionsRequestType" />
+	<element name="FindWithdrawalInstructionsResponse"
+		type="tns:FindWithdrawalInstructionsResponseType" />
+
+	<element name="CreateWithdrawalInstructionsRequest"
+		type="tns:CreateWithdrawalInstructionsRequestType" />
+	<element name="CreateWithdrawalInstructionsResponse"
+		type="tns:CreateWithdrawalInstructionsResponseType" />
+
+	<element name="DeleteWithdrawalInstructionRequest"
+		type="tns:DeleteWithdrawalInstructionRequestType" />
+	<element name="DeleteWithdrawalInstructionResponse"
+		type="tns:DeleteWithdrawalInstructionResponseType" />
+
+	<element name="ModifyWithdrawalInstructionRequest"
+		type="tns:ModifyWithdrawalInstructionRequestType" />
+	<element name="ModifyWithdrawalInstructionResponse"
+		type="tns:ModifyWithdrawalInstructionResponseType" />
+
+</schema>

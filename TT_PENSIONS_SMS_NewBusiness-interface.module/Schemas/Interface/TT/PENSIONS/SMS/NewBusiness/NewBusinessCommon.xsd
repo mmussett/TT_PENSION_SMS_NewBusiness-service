@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:newbus="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness/newbusinesscommon"
+	xmlns:tns="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness/newbusinesscommon"
+	targetNamespace="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness/newbusinesscommon"
+	elementFormDefault="qualified">
+	<complexType name="IncrementGroup">
+		<sequence>
+			<element minOccurs="0" maxOccurs="1" ref="tns:Id" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:IncrementGroupType" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:ProductType" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:PlanId" />
+		</sequence>
+	</complexType>
+	<complexType name="IdentifiableById">
+		<sequence>
+			<element minOccurs="0" maxOccurs="1" ref="tns:ID" />
+		</sequence>
+	</complexType>
+	<complexType name="FlexibleAccess">
+		<sequence>
+			<element minOccurs="0" maxOccurs="1" ref="tns:Id" />
+            <element minOccurs="0" maxOccurs="1" ref="tns:NewBusinessId" />
+            <element minOccurs="0" maxOccurs="1" ref="tns:OverrideCharge" />
+            <element minOccurs="0" maxOccurs="1" ref="tns:ExistingPlanNumber" />
+            <element minOccurs="0" maxOccurs="1" ref="tns:GuidanceServiceUsed" />
+            <element minOccurs="0" maxOccurs="1" ref="tns:DrawdownGovernanceServiceUsed" />
+            <element minOccurs="0" maxOccurs="1" ref="tns:DrawdownGovernanceTargetType" />
+            <element minOccurs="0" maxOccurs="1" ref="tns:ClientHasExistingPlanForTwelveMonthsFlag" />
+            <element minOccurs="0" maxOccurs="1" ref="tns:ClientHasIncomeReleasePlanFlag" />
+		</sequence>
+	</complexType>
+	<complexType name="FlexibleAccessList">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0" ref="tns:FlexibleAccess" />
+		</sequence>
+	</complexType>
+	<complexType name="FlexibleAccessInstruction">
+		<sequence>
+		    <element minOccurs="0" maxOccurs="1" ref="tns:Id" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:FlexibleAccessType" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:IncrementGroup" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:NewBusinessId" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:TakeFullTaxFreeCash" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:TakePartialTaxFreeCash" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:PartialTaxFreeCashAmount" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:TakeTaxFreeRegularIncome" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:TaxFreeRegularIncomeAmount" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:TakePartialTaxableCash" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:PartialTaxableCashAmount" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:TakeTaxableRegularIncome" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:TaxableRegularIncomeAmount" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:RegularIncomePaymentFrequencyType" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:RegularIncomePaymentDay" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:EscalationType" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:EscalationPercentage" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:UseIncomeTap" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:IncomeTapNumberOfMonths" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:IncomeTapReviewFrequencyType" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:IsMaxGad" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:PartialGadAmount" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:PartialGadPercentage" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:FullyCrystalliseSavingsWithNoTaxFreeCash" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:PartiallyCrystalliseSavingsWithNoTaxFreeCash" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:PartialCrystallisationAmountWithNoTaxFreeCash" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:PaymentBankAccountId" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:TaxFreeIncomeActionType" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:TaxableIncomeActionType" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:TaxFreeRegularIncomeAmountPerFrequency" />
+			<element minOccurs="0" maxOccurs="1" ref="tns:TaxableRegularIncomeAmountPerFrequency" />
+			<element minOccurs="0" maxOccurs="1"
+				ref="tns:FullCrystallisationOfBlockTransferValue" />
+		</sequence>
+	</complexType>
+
+	<complexType name="FlexibleAccessInstructionsList">
+		<sequence>
+			<element maxOccurs="unbounded" minOccurs="0"
+				ref="tns:FlexibleAccessInstruction" />
+		</sequence>
+	</complexType>
+	
+	<complexType name="WithdrawalFundsList">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" ref="tns:WithdrawalFund"/>
+        </sequence>
+    </complexType>
+    
+    
+    <complexType name="WithdrawalFund">
+        <sequence>
+            <element minOccurs="0" maxOccurs="1" ref="tns:Id" />
+            <element minOccurs="0" maxOccurs="1" ref="tns:WithdrawalInstructionType"/>
+            <element minOccurs="0" maxOccurs="1" ref="tns:WithdrawalType"/>
+            <element minOccurs="0" maxOccurs="1" ref="tns:FundId"/>
+        </sequence>
+    </complexType>
+  
+    <complexType name="WithdrawalFundIdentifiable">
+        <sequence>
+            <element minOccurs="0" maxOccurs="1"  ref="tns:Id" />
+        </sequence>
+    </complexType>
+
+	<element name="WithdrawalFundsList"  type="tns:WithdrawalFundsList" />
+	<element name="WithdrawalFund" type="tns:WithdrawalFund"/>
+	<element name="FlexibleAccessInstruction" type="tns:FlexibleAccessInstruction" />
+	<element name="FlexibleAccessInstructions" type="tns:FlexibleAccessInstructionsList" />
+	<element name="FlexibleAccess" type="tns:FlexibleAccess" />
+	<element name="FlexibleAccessList" type="tns:FlexibleAccessList" />
+	<element name="Identifiable" type="tns:IdentifiableById" />
+	<element name="WithdrawalFundIdentifiable" type="tns:WithdrawalFundIdentifiable" />
+
+	<element name="OverrideCharge" type="boolean" />
+	<element name="ExistingPlanNumber" type="string" />
+	<element name="GuidanceServiceUsed" type="boolean" />
+	<element name="DrawdownGovernanceServiceUsed" type="boolean" />
+	<element name="DrawdownGovernanceTargetType" type="string" />
+
+	<element name="ID" type="string" />
+	<element name="FlexibleAccessType" type="string" />
+	<element name="IncrementGroup" type="tns:IncrementGroup" />
+	<element name="NewBusinessId" type="string" />
+	<element name="TakeFullTaxFreeCash" type="boolean" />
+	<element name="TakePartialTaxFreeCash" type="boolean" />
+	<element name="PartialTaxFreeCashAmount" type="decimal" />
+	<element name="TakeTaxFreeRegularIncome" type="boolean" />
+	<element name="TaxFreeRegularIncomeAmount" type="decimal" />
+	<element name="TakePartialTaxableCash" type="boolean" />
+	<element name="PartialTaxableCashAmount" type="decimal" />
+	<element name="TakeTaxableRegularIncome" type="boolean" />
+	<element name="TaxableRegularIncomeAmount" type="decimal" />
+	<element name="RegularIncomePaymentFrequencyType" type="string" />
+	<element name="RegularIncomePaymentDay" type="int" />
+	<element name="EscalationType" type="string" />
+	<element name="EscalationPercentage" type="decimal" />
+	<element name="UseIncomeTap" type="boolean" />
+	<element name="IncomeTapNumberOfMonths" type="int" />
+	<element name="IncomeTapReviewFrequencyType" type="string" />
+	<element name="IsMaxGad" type="boolean" />
+	<element name="PartialGadAmount" type="decimal" />
+	<element name="PartialGadPercentage" type="decimal" />
+	<element name="FullyCrystalliseSavingsWithNoTaxFreeCash" type="boolean" />
+	<element name="PartiallyCrystalliseSavingsWithNoTaxFreeCash"
+		type="boolean" />
+	<element name="PartialCrystallisationAmountWithNoTaxFreeCash"
+		type="decimal" />
+	<element name="PaymentBankAccountId" type="string" />
+	<element name="TaxFreeIncomeActionType" type="string" />
+	<element name="TaxableIncomeActionType" type="string" />
+	<element name="TaxFreeRegularIncomeAmountPerFrequency" type="decimal" />
+	<element name="TaxableRegularIncomeAmountPerFrequency" type="decimal" />
+	<element name="FullCrystallisationOfBlockTransferValue" type="boolean" />
+
+	<element name="Id" type="string" />
+	<element name="IncrementGroupType" type="string" />
+	<element name="ProductType" type="string" />
+	<element name="PlanId" type="string" />
+
+	<element name="ClientHasExistingPlanForTwelveMonthsFlag" type="boolean" />
+	<element name="ClientHasIncomeReleasePlanFlag" type="boolean" />
+	
+	<element name="PolicyId" type="string" />
+	
+	<element name="FlexibleAccessInstructionId " type="string" />
+	
+	<element name="WithdrawalInstructionType" type="string" />
+    <element name="WithdrawalType" type="string" />
+    <element name="FundId" type="string" />
+	
+</schema>

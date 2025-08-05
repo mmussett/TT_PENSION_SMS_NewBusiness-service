@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmi:id="_Cs0X4MJDEeeP9rUUiv7rnA" targetNamespace="http://tns.tibco.com/bw/composite/TT_PENSIONS_SMS_NewBusiness-interface.module" name="TT_PENSIONS_SMS_NewBusiness-interface.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_CwZQUMJDEeeP9rUUiv7rnA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CwZQUcJDEeeP9rUUiv7rnA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CwZQUsJDEeeP9rUUiv7rnA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CwZQU8JDEeeP9rUUiv7rnA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CwZQVMJDEeeP9rUUiv7rnA" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CwZQVcJDEeeP9rUUiv7rnA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CwiaQMJDEeeP9rUUiv7rnA" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CwiaQcJDEeeP9rUUiv7rnA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_CwiaQsJDEeeP9rUUiv7rnA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+</sca:composite>

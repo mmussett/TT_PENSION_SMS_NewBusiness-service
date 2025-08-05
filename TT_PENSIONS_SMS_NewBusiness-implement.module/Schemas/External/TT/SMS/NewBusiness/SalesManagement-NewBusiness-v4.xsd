@@ -1,0 +1,2109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:tns="http://www.royallondon.com/xsd/service/pensions/sales/new-business/v7" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.royallondon.com/xsd/service/pensions/sales/new-business/v7">
+    <xs:element name="FlexibleAccessInstruction" type="tns:FlexibleAccessInstruction"/>
+    <xs:complexType name="FlexibleAccessInstruction">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="FlexibleAccessType" type="xs:string"/>
+            <xs:element name="IncrementGroup" type="tns:IncrementGroup"/>
+            <xs:element minOccurs="0" name="NewBusinessId" type="xs:string"/>
+            <xs:element name="TakeFullTaxFreeCash" type="xs:boolean"/>
+            <xs:element name="TakePartialTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialTaxFreeCashAmount" type="xs:decimal"/>
+            <xs:element name="TakeTaxFreeRegularIncome" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TaxFreeRegularIncomeAmount" type="xs:decimal"/>
+            <xs:element name="TakePartialTaxableCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialTaxableCashAmount" type="xs:decimal"/>
+            <xs:element name="TakeTaxableRegularIncome" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TaxableRegularIncomeAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentFrequencyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentDay" type="xs:int"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercentage" type="xs:decimal"/>
+            <xs:element name="UseIncomeTap" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IncomeTapNumberOfMonths" type="xs:int"/>
+            <xs:element minOccurs="0" name="IncomeTapReviewFrequencyType" type="xs:string"/>
+            <xs:element name="IsMaxGad" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialGadAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PartialGadPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="FullyCrystalliseSavingsWithNoTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartiallyCrystalliseSavingsWithNoTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialCrystallisationAmountWithNoTaxFreeCash" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentBankAccountId" type="xs:string"/>
+            <xs:element minOccurs="0" name="TaxFreeIncomeActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="TaxableIncomeActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="TaxFreeRegularIncomeAmountPerFrequency" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="TaxableRegularIncomeAmountPerFrequency" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="FullCrystallisationOfBlockTransferValue" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateQuoteIncrement" type="tns:UpdateQuoteIncrement"/>
+    <xs:complexType name="UpdateQuoteIncrement">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element minOccurs="0" name="PolicyId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="Transfer" type="tns:UpdateQuoteTransfer"/>
+            <xs:element minOccurs="0" name="Contribution" type="tns:UpdateQuoteContribution"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateBankAccount" type="tns:UpdateBankAccount"/>
+    <xs:complexType name="UpdateBankAccount">
+        <xs:sequence>
+            <xs:element name="AccountNumber" type="xs:string"/>
+            <xs:element name="SortCode" type="xs:string"/>
+            <xs:element name="AccountName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ThirdPartyContact" type="tns:ThirdPartyContact"/>
+    <xs:complexType name="ThirdPartyContact">
+        <xs:sequence>
+            <xs:element name="ContactType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:string"/>
+            <xs:element name="Address" type="tns:ThirdPartyAddress"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateApplicant" type="tns:CreateApplicant"/>
+    <xs:complexType name="CreateApplicant">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="CaseId" type="xs:string"/>
+            <xs:element minOccurs="0" name="TitleType" type="xs:string"/>
+            <xs:element name="FirstName" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="NINumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="EmploymentStatus" type="xs:string"/>
+            <xs:element name="SexType" type="xs:string"/>
+            <xs:element minOccurs="0" name="CustomerId" type="xs:long"/>
+            <xs:element minOccurs="0" name="CrownEmployeeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="AllowMarketingFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="LivesInScotlandFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="AmlConsentGiven" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="UKEarningFlag" type="xs:boolean"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Contacts" type="tns:CreateContact"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Contact" type="tns:Contact"/>
+    <xs:complexType name="Contact">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="ContactType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:string"/>
+            <xs:element minOccurs="0" name="Address" type="tns:Address"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateQuoteContribution" type="tns:CreateQuoteContribution"/>
+    <xs:complexType name="CreateQuoteContribution">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ContributionFrequencyType" type="xs:string"/>
+            <xs:element name="ContributionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="ClientEarnings" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationRate" type="xs:decimal"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ContributionValues" type="tns:CreateQuoteContributionValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="NewBusinessAdviserCharge" type="tns:NewBusinessAdviserCharge"/>
+    <xs:complexType name="NewBusinessAdviserCharge">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element name="PeriodType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FrequencyType" type="xs:string"/>
+            <xs:element name="BasisType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ChargeTimingType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EffectiveDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="DelayFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="Delay" type="xs:int"/>
+            <xs:element minOccurs="0" name="PaymentsInstruction" type="xs:int"/>
+            <xs:element minOccurs="0" name="FacilitationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercent" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EscalationDate" type="xs:date"/>
+            <xs:element name="IsPlanLevel" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateProposalAdviserCharges" type="tns:UpdateProposalAdviserCharges"/>
+    <xs:complexType name="UpdateProposalAdviserCharges">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="UpdateProposalAdviserCharge" type="tns:UpdateProposalAdviserCharge"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Applicants" type="tns:Applicants"/>
+    <xs:complexType name="Applicants">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Metadata" type="tns:Metadata"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Applicant" type="tns:Applicant"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateQuoteContribution" type="tns:UpdateQuoteContribution"/>
+    <xs:complexType name="UpdateQuoteContribution">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ContributionFrequencyType" type="xs:string"/>
+            <xs:element name="ContributionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="ClientEarnings" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationRate" type="xs:decimal"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ContributionValues" type="tns:UpdateQuoteContributionValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateCompanyInfo" type="tns:CreateCompanyInfo"/>
+    <xs:complexType name="CreateCompanyInfo">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="CompanyName" type="xs:string"/>
+            <xs:element name="CompanyType" type="xs:string"/>
+            <xs:element name="RegisteredAddress" type="tns:Address"/>
+            <xs:element name="NatureOfBusinessType" type="xs:string"/>
+            <xs:element minOccurs="0" name="OtherNatureOfBusinessType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegistrationNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="VATNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegulatorName" type="xs:string"/>
+            <xs:element minOccurs="0" name="PrincipalPlaceOfBusiness" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfIncorporation" type="xs:date"/>
+            <xs:element minOccurs="0" name="CountryOfJurisdiction" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="CompanyBeneficialOwners" type="tns:CreateCompanyBeneficialOwner"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProposalState" type="tns:ProposalState"/>
+    <xs:complexType name="ProposalState">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ProposalStatus" type="xs:string"/>
+            <xs:element name="ProposalStatusType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IllustrationGroupFlexibleAccess" type="tns:IllustrationGroupFlexibleAccess"/>
+    <xs:complexType name="IllustrationGroupFlexibleAccess">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="OverrideCharge" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="GuidanceServiceUsed" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DrawdownGovernanceServiceUsed" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DrawdownGovernanceTargetType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ClientHasExistingPlanForTwelveMonthsFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ClientHasIncomeReleasePlanFlag" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="PatchApplicant" type="tns:PatchApplicant"/>
+    <xs:complexType name="PatchApplicant">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="TitleType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element minOccurs="0" name="Surname" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="NINumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="EmploymentStatus" type="xs:string"/>
+            <xs:element minOccurs="0" name="SexType" type="xs:string"/>
+            <xs:element minOccurs="0" name="AmlConsentGiven" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="CustomerId" type="xs:long"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteAdviserCharge" type="tns:QuoteAdviserCharge"/>
+    <xs:complexType name="QuoteAdviserCharge">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element name="PeriodType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FrequencyType" type="xs:string"/>
+            <xs:element name="BasisType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ChargeTimingType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EffectiveDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="DelayFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="Delay" type="xs:int"/>
+            <xs:element minOccurs="0" name="PaymentsInstruction" type="xs:int"/>
+            <xs:element minOccurs="0" name="FacilitationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercent" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EscalationDate" type="xs:date"/>
+            <xs:element name="IsPlanLevel" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateOtherMoney" type="tns:UpdateOtherMoney"/>
+    <xs:complexType name="UpdateOtherMoney">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Amount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="AnnualManagementCharge" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PlanNumber" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="NewBusinessProposalIncrement" type="tns:NewBusinessProposalIncrement"/>
+    <xs:complexType name="NewBusinessProposalIncrement">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="NewBusinessId" type="xs:string"/>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element minOccurs="0" name="GroupId" type="xs:string"/>
+            <xs:element minOccurs="0" name="PolicyId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="Transfer" type="tns:ProposalTransfer"/>
+            <xs:element minOccurs="0" name="Contribution" type="tns:IncrementContribution"/>
+            <xs:element name="IncrementGroup" type="tns:IncrementGroup"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ExistingPlan" type="tns:ExistingPlan"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="FlexibleAccess" type="tns:FlexibleAccess"/>
+    <xs:complexType name="FlexibleAccess">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="NewBusinessId" type="xs:string"/>
+            <xs:element minOccurs="0" name="OverrideCharge" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ExistingPlanNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="GuidanceServiceUsed" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DrawdownGovernanceServiceUsed" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DrawdownGovernanceTargetType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ClientHasExistingPlanForTwelveMonthsFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ClientHasIncomeReleasePlanFlag" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateNewProvider" type="tns:CreateNewProvider"/>
+    <xs:complexType name="CreateNewProvider">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element minOccurs="0" name="SchemeName" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContactPhoneNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContactEmailAddress" type="xs:string"/>
+            <xs:element minOccurs="0" name="Address" type="tns:Address"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateFlexibleAccess" type="tns:UpdateFlexibleAccess"/>
+    <xs:complexType name="UpdateFlexibleAccess">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="OverrideCharge" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ExistingPlanNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="GuidanceServiceUsed" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DrawdownGovernanceServiceUsed" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DrawdownGovernanceTargetType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ClientHasExistingPlanForTwelveMonthsFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ClientHasIncomeReleasePlanFlag" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="LifetimeAllowance" type="tns:LifetimeAllowance"/>
+    <xs:complexType name="LifetimeAllowance">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="LifetimeAllowanceUsedPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="LifetimeAllowanceUsedDifference" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="LifetimeAllowanceProtection" type="tns:LifetimeAllowanceProtection"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateThirdPartyAddress" type="tns:UpdateThirdPartyAddress"/>
+    <xs:complexType name="UpdateThirdPartyAddress">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ForeignAddressFlag" type="xs:boolean"/>
+            <xs:element name="AddressType" type="xs:string"/>
+            <xs:element name="AddressLine1" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine2" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine3" type="xs:string"/>
+            <xs:element name="City" type="xs:string"/>
+            <xs:element name="Postcode" type="xs:string"/>
+            <xs:element name="CountryType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateProposalAdviserCharge" type="tns:UpdateProposalAdviserCharge"/>
+    <xs:complexType name="UpdateProposalAdviserCharge">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element name="PeriodType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FrequencyType" type="xs:string"/>
+            <xs:element name="BasisType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ChargeTimingType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EffectiveDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="DelayFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="Delay" type="xs:int"/>
+            <xs:element minOccurs="0" name="PaymentsInstruction" type="xs:int"/>
+            <xs:element minOccurs="0" name="FacilitationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercent" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EscalationDate" type="xs:date"/>
+            <xs:element name="IsPlanLevel" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateProposalIncrements" type="tns:UpdateProposalIncrements"/>
+    <xs:complexType name="UpdateProposalIncrements">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ProposalIncrement" type="tns:UpdateProposalIncrement"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateQuoteAdviserCharges" type="tns:UpdateQuoteAdviserCharges"/>
+    <xs:complexType name="UpdateQuoteAdviserCharges">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="UpdateQuoteAdviserCharge" type="tns:UpdateQuoteAdviserCharge"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IllustrationStructureApplication" type="tns:IllustrationStructureApplication"/>
+    <xs:complexType name="IllustrationStructureApplication">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+            <xs:element name="Reference" type="xs:string"/>
+            <xs:element name="Applicant" type="tns:IllustrationStructureApplicant"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateContributionValue" type="tns:CreateContributionValue"/>
+    <xs:complexType name="CreateContributionValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ContributionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContributorType" type="xs:string"/>
+            <xs:element minOccurs="0" name="MonetaryAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="Percentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EmploymentStatusType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateIncomeDrawdown" type="tns:UpdateIncomeDrawdown"/>
+    <xs:complexType name="UpdateIncomeDrawdown">
+        <xs:sequence>
+            <xs:element name="ReviewDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="MaxGadAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="IncomeTaken" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateQuoteIncrements" type="tns:CreateQuoteIncrements"/>
+    <xs:complexType name="CreateQuoteIncrements">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="CreateQuoteIncrement" type="tns:CreateQuoteIncrement"/>
+            <xs:element minOccurs="0" name="GroupIncrementsFlag" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateProposalIncrements" type="tns:CreateProposalIncrements"/>
+    <xs:complexType name="CreateProposalIncrements">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="CreateProposalIncrement" type="tns:CreateProposalIncrement"/>
+            <xs:element minOccurs="0" name="GroupIncrementsFlag" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProposalHref" type="tns:ProposalHref"/>
+    <xs:complexType name="ProposalHref">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteAdviserCharges" type="tns:QuoteAdviserCharges"/>
+    <xs:complexType name="QuoteAdviserCharges">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="QuoteAdviserCharge" type="tns:QuoteAdviserCharge"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateLifetimeAllowanceProtection" type="tns:CreateLifetimeAllowanceProtection"/>
+    <xs:complexType name="CreateLifetimeAllowanceProtection">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ProtectionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="PercentageOfProtectedTaxFreeCash" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProtectionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProtectionFactor" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateQuoteAdviserCharge" type="tns:UpdateQuoteAdviserCharge"/>
+    <xs:complexType name="UpdateQuoteAdviserCharge">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element name="PeriodType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FrequencyType" type="xs:string"/>
+            <xs:element name="BasisType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ChargeTimingType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EffectiveDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="DelayFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="Delay" type="xs:int"/>
+            <xs:element minOccurs="0" name="PaymentsInstruction" type="xs:int"/>
+            <xs:element minOccurs="0" name="FacilitationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercent" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EscalationDate" type="xs:date"/>
+            <xs:element name="IsPlanLevel" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProposalIncrement" type="tns:ProposalIncrement"/>
+    <xs:complexType name="ProposalIncrement">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="NewBusinessId" type="xs:string"/>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element minOccurs="0" name="GroupId" type="xs:string"/>
+            <xs:element name="IncrementGroup" type="tns:IncrementGroup"/>
+            <xs:element minOccurs="0" name="PolicyId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="Transfer" type="tns:ProposalTransfer"/>
+            <xs:element minOccurs="0" name="Contribution" type="tns:IncrementContribution"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateNewProvider" type="tns:UpdateNewProvider"/>
+    <xs:complexType name="UpdateNewProvider">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element minOccurs="0" name="SchemeName" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContactPhoneNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContactEmailAddress" type="xs:string"/>
+            <xs:element minOccurs="0" name="Address" type="tns:Address"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateWithdrawalInstruction" type="tns:CreateWithdrawalInstruction"/>
+    <xs:complexType name="CreateWithdrawalInstruction">
+        <xs:sequence>
+            <xs:element name="IncrementGroupId" type="xs:string"/>
+            <xs:element minOccurs="0" name="OneOffWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalFrequencyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentDay" type="xs:int"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentBankAccountId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateProposal" type="tns:CreateProposal"/>
+    <xs:complexType name="CreateProposal">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Quote" type="tns:QuoteHref"/>
+            <xs:element name="Application" type="tns:CreateApplication"/>
+            <xs:element minOccurs="0" name="ProductType" type="xs:string"/>
+            <xs:element name="AdviserId" type="xs:int"/>
+            <xs:element minOccurs="0" name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="MpaaTriggerDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="CaseId" type="xs:string"/>
+            <xs:element minOccurs="0" name="ApplicationReceivedDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="IsCleanApplication" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="LastInformationReceivedDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="AdviceType" type="xs:string"/>
+            <xs:element minOccurs="0" name="LifetimeAllowance" type="tns:CreateLifetimeAllowance"/>
+            <xs:element minOccurs="0" name="NewBusinessType" type="xs:string"/>
+            <xs:element minOccurs="0" name="OtherMoneyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="IsNonAdvisedFlag" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Application" type="tns:Application"/>
+    <xs:complexType name="Application">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+            <xs:element name="Reference" type="xs:string"/>
+            <xs:element minOccurs="0" name="Quote" type="tns:QuoteHref"/>
+            <xs:element minOccurs="0" name="Proposal" type="tns:ProposalHref"/>
+            <xs:element name="Applicant" type="tns:ApplicantHref"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateOtherMoney" type="tns:CreateOtherMoney"/>
+    <xs:complexType name="CreateOtherMoney">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Amount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="AnnualManagementCharge" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PlanNumber" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteRequest" type="tns:QuoteRequest"/>
+    <xs:complexType name="QuoteRequest">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="RequestDetails" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteHref" type="tns:QuoteHref"/>
+    <xs:complexType name="QuoteHref">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateQuoteIncrements" type="tns:UpdateQuoteIncrements"/>
+    <xs:complexType name="UpdateQuoteIncrements">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="QuoteIncrement" type="tns:UpdateQuoteIncrement"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateAuthorizedThirdParty" type="tns:CreateAuthorizedThirdParty"/>
+    <xs:complexType name="CreateAuthorizedThirdParty">
+        <xs:sequence>
+            <xs:element name="ThirdPartyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="TitleType" type="xs:string"/>
+            <xs:element name="FirstName" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="IsPrimaryCorrespondent" type="xs:boolean"/>
+            <xs:element maxOccurs="unbounded" name="Contacts" type="tns:CreateThirdPartyContact"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ContributionValue" type="tns:ContributionValue"/>
+    <xs:complexType name="ContributionValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ContributionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContributorType" type="xs:string"/>
+            <xs:element minOccurs="0" name="MonetaryAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="Percentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EmploymentStatusType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProtectedTaxFreeCashModel" type="tns:ProtectedTaxFreeCashModel"/>
+    <xs:complexType name="ProtectedTaxFreeCashModel">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ProtectedTaxFreeCashFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TotalPartialTransfer" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ValueOfRetirementOnApril" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProtectedTaxFreeValueOnApril" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="AnyPartialTransferFlag" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="WithdrawalFundIdentifiable" type="tns:WithdrawalFundIdentifiable"/>
+    <xs:complexType name="WithdrawalFundIdentifiable">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdatePayerAddress" type="tns:UpdatePayerAddress"/>
+    <xs:complexType name="UpdatePayerAddress">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="AddressLine1" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine2" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine3" type="xs:string"/>
+            <xs:element minOccurs="0" name="City" type="xs:string"/>
+            <xs:element minOccurs="0" name="CountryType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Postcode" type="xs:string"/>
+            <xs:element minOccurs="0" name="Email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="NewProvider" type="tns:NewProvider"/>
+    <xs:complexType name="NewProvider">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element minOccurs="0" name="SchemeName" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContactPhoneNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContactEmailAddress" type="xs:string"/>
+            <xs:element name="Address" type="tns:Address"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Quotes" type="tns:Quotes"/>
+    <xs:complexType name="Quotes">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Metadata" type="tns:Metadata"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Quote" type="tns:Quote"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateThirdPartyContact" type="tns:CreateThirdPartyContact"/>
+    <xs:complexType name="CreateThirdPartyContact">
+        <xs:sequence>
+            <xs:element name="ContactType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:string"/>
+            <xs:element minOccurs="0" name="Address" type="tns:CreateThirdPartyAddress"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="TrackerEvents" type="tns:TrackerEvents"/>
+    <xs:complexType name="TrackerEvents">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Metadata" type="tns:Metadata"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="TrackerEvent" type="tns:TrackerEvent"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateApplication" type="tns:CreateApplication"/>
+    <xs:complexType name="CreateApplication">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+            <xs:element name="Applicant" type="tns:ApplicantHref"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Proposal" type="tns:Proposal"/>
+    <xs:complexType name="Proposal">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="Application" type="tns:Application"/>
+            <xs:element name="ProductType" type="xs:string"/>
+            <xs:element name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetAgeAboveTaxReliefThresholdFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TargetAgeCapturedFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProposalStatus" type="xs:string"/>
+            <xs:element name="ProposalStatusType" type="xs:string"/>
+            <xs:element minOccurs="0" name="CaseId" type="xs:string"/>
+            <xs:element name="AdviserId" type="xs:int"/>
+            <xs:element minOccurs="0" name="ApplicationSubmissionDate" type="xs:date"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Increments" type="tns:NewBusinessProposalIncrement"/>
+            <xs:element minOccurs="0" name="IncrementTotals" type="tns:IncrementTotals"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="AdviserCharges" type="tns:NewBusinessAdviserCharge"/>
+            <xs:element minOccurs="0" name="ApplicationReceivedDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="IsCleanApplication" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="LastInformationReceivedDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="BeneficiaryDetails" type="tns:BeneficiaryDetails"/>
+            <xs:element minOccurs="0" name="DeclarationDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="MpaaTriggerDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="AdviceType" type="xs:string"/>
+            <xs:element minOccurs="0" name="LifetimeAllowance" type="tns:LifetimeAllowance"/>
+            <xs:element name="NewBusinessType" type="xs:string"/>
+            <xs:element minOccurs="0" name="OtherMoneyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ApplicationDownloadDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="AwardProfitShareThisYearFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="CreatedAt" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="IsNonAdvisedFlag" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateQuoteAdviserCharges" type="tns:CreateQuoteAdviserCharges"/>
+    <xs:complexType name="CreateQuoteAdviserCharges">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="CreateQuoteAdviserCharge" type="tns:CreateQuoteAdviserCharge"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="AuthorizedThirdParty" type="tns:AuthorizedThirdParty"/>
+    <xs:complexType name="AuthorizedThirdParty">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="ThirdPartyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="TitleType" type="xs:string"/>
+            <xs:element name="FirstName" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="IsPrimaryCorrespondent" type="xs:boolean"/>
+            <xs:element maxOccurs="unbounded" name="Contacts" type="tns:ThirdPartyContact"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IllustrationGroupIncrement" type="tns:IllustrationGroupIncrement"/>
+    <xs:complexType name="IllustrationGroupIncrement">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="NewBusinessId" type="xs:string"/>
+            <xs:element minOccurs="0" name="GroupId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementType" type="xs:string"/>
+            <xs:element name="IncrementGroup" type="tns:IncrementGroup"/>
+            <xs:element minOccurs="0" name="Transfer" type="tns:QuoteTransfer"/>
+            <xs:element minOccurs="0" name="Contribution" type="tns:IllustrationGroupContribution"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="PlanId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProposalAdviserCharge" type="tns:ProposalAdviserCharge"/>
+    <xs:complexType name="ProposalAdviserCharge">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element name="PeriodType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FrequencyType" type="xs:string"/>
+            <xs:element name="BasisType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ChargeTimingType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EffectiveDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="DelayFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="Delay" type="xs:int"/>
+            <xs:element minOccurs="0" name="PaymentsInstruction" type="xs:int"/>
+            <xs:element minOccurs="0" name="FacilitationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercent" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EscalationDate" type="xs:date"/>
+            <xs:element name="IsPlanLevel" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateContributionValue" type="tns:UpdateContributionValue"/>
+    <xs:complexType name="UpdateContributionValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ContributionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContributorType" type="xs:string"/>
+            <xs:element minOccurs="0" name="MonetaryAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="Percentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EmploymentStatus" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CompanyBeneficialOwner" type="tns:CompanyBeneficialOwner"/>
+    <xs:complexType name="CompanyBeneficialOwner">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element minOccurs="0" name="Surname" type="xs:string"/>
+            <xs:element minOccurs="0" name="SharePercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="Role" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="BeneficialOwnerId" type="xs:string"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="CurrentHomeAddress" type="tns:Address"/>
+            <xs:element minOccurs="0" name="PreviousHomeAddress" type="tns:Address"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="TaxFreeCashCalculationInputs" type="tns:TaxFreeCashCalculationInputs"/>
+    <xs:complexType name="TaxFreeCashCalculationInputs">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ProtectionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="CustomLTA" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="SlaUsedPercentage" type="xs:decimal"/>
+            <xs:element name="SavingsPlanValue" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="BlockTransferPlanValue" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="IncrementGroupId" type="xs:string"/>
+            <xs:element minOccurs="0" name="HasExistingPlanNumber" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ExistingPlanNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="RelevantTaxYearLTA" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProtectionTypeLTA" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="April2006ProtectedTFC" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="April2006BenefitAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PartialTransferAfterApril2006Amount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProtectionTypeFactorLowerBounds" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProtectionTypeFactorUpperBounds" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="NewBusinessIdentifiable" type="tns:NewBusinessIdentifiable"/>
+    <xs:complexType name="NewBusinessIdentifiable">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="BankAccounts" type="tns:BankAccounts"/>
+    <xs:complexType name="BankAccounts">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="BankAccount" type="tns:BankAccount"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IncrementHref" type="tns:IncrementHref"/>
+    <xs:complexType name="IncrementHref">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementType" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncomeDrawdownType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateIncomeDrawdown" type="tns:CreateIncomeDrawdown"/>
+    <xs:complexType name="CreateIncomeDrawdown">
+        <xs:sequence>
+            <xs:element name="ReviewDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="MaxGadAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="IncomeTaken" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="NewBusinessBankAccount" type="tns:NewBusinessBankAccount"/>
+    <xs:complexType name="NewBusinessBankAccount">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+            <xs:element name="AccountNumber" type="xs:string"/>
+            <xs:element name="SortCode" type="xs:string"/>
+            <xs:element name="AccountName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateWithdrawalInstruction" type="tns:UpdateWithdrawalInstruction"/>
+    <xs:complexType name="UpdateWithdrawalInstruction">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="OneOffWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalFrequencyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentDay" type="xs:int"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentBankAccountId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateFlexibleAccessInstruction" type="tns:CreateFlexibleAccessInstruction"/>
+    <xs:complexType name="CreateFlexibleAccessInstruction">
+        <xs:sequence>
+            <xs:element name="FlexibleAccessType" type="xs:string"/>
+            <xs:element name="IncrementGroupId" type="xs:string"/>
+            <xs:element name="TakeFullTaxFreeCash" type="xs:boolean"/>
+            <xs:element name="TakePartialTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialTaxFreeCashAmount" type="xs:decimal"/>
+            <xs:element name="TakeTaxFreeRegularIncome" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TaxFreeRegularIncomeAmount" type="xs:decimal"/>
+            <xs:element name="TakePartialTaxableCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialTaxableCashAmount" type="xs:decimal"/>
+            <xs:element name="TakeTaxableRegularIncome" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TaxableRegularIncomeAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentFrequencyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentDay" type="xs:int"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercentage" type="xs:decimal"/>
+            <xs:element name="UseIncomeTap" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IncomeTapNumberOfMonths" type="xs:int"/>
+            <xs:element minOccurs="0" name="IncomeTapReviewFrequencyType" type="xs:string"/>
+            <xs:element name="IsMaxGad" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialGadAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PartialGadPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="FullyCrystalliseSavingsWithNoTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartiallyCrystalliseSavingsWithNoTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialCrystallisationAmountWithNoTaxFreeCash" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentBankAccountId" type="xs:string"/>
+            <xs:element minOccurs="0" name="TaxFreeIncomeActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="TaxableIncomeActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FullCrystallisationOfBlockTransferValue" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="PayerAddress" type="tns:PayerAddress"/>
+    <xs:complexType name="PayerAddress">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="AddressLine1" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine2" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine3" type="xs:string"/>
+            <xs:element minOccurs="0" name="City" type="xs:string"/>
+            <xs:element minOccurs="0" name="CountryType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Postcode" type="xs:string"/>
+            <xs:element minOccurs="0" name="Email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateQuoteContributionValue" type="tns:UpdateQuoteContributionValue"/>
+    <xs:complexType name="UpdateQuoteContributionValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ContributionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContributorType" type="xs:string"/>
+            <xs:element minOccurs="0" name="MonetaryAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="Percentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EmploymentStatusType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateCompanyBeneficialOwner" type="tns:CreateCompanyBeneficialOwner"/>
+    <xs:complexType name="CreateCompanyBeneficialOwner">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element minOccurs="0" name="Surname" type="xs:string"/>
+            <xs:element minOccurs="0" name="SharePercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="Role" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="BeneficialOwnerId" type="xs:string"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="CurrentHomeAddress" type="tns:Address"/>
+            <xs:element minOccurs="0" name="PreviousHomeAddress" type="tns:Address"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Payer" type="tns:Payer"/>
+    <xs:complexType name="Payer">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="PayerType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element minOccurs="0" name="Surname" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="Address" type="tns:PayerAddress"/>
+            <xs:element minOccurs="0" name="ApplicantRelationshipType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ExistingContributorId" type="xs:string"/>
+            <xs:element minOccurs="0" name="Company" type="tns:CompanyInfo"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="BankAccounts" type="tns:NewBusinessBankAccount"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="TrackerEvent" type="tns:TrackerEvent"/>
+    <xs:complexType name="TrackerEvent">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="CustomerId" type="xs:long"/>
+            <xs:element minOccurs="0" name="ApplicantId" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element minOccurs="0" name="Surname" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="Reference" type="xs:string"/>
+            <xs:element minOccurs="0" name="StatusType" type="xs:string"/>
+            <xs:element name="NewBusinessType" type="xs:string"/>
+            <xs:element name="ReferenceId" type="xs:string"/>
+            <xs:element name="ProductType" type="xs:string"/>
+            <xs:element name="AdviserId" type="xs:int"/>
+            <xs:element minOccurs="0" name="EventDescription" type="xs:string"/>
+            <xs:element name="EventDate" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="IncrementId" type="xs:string"/>
+            <xs:element minOccurs="0" name="PlanId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateQuoteHeader" type="tns:UpdateQuoteHeader"/>
+    <xs:complexType name="UpdateQuoteHeader">
+        <xs:sequence>
+            <xs:element name="QuoteRequest" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IllustrationGroupFlexibleAccessInstruction" type="tns:IllustrationGroupFlexibleAccessInstruction"/>
+    <xs:complexType name="IllustrationGroupFlexibleAccessInstruction">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="FlexibleAccessType" type="xs:string"/>
+            <xs:element name="IncrementGroup" type="tns:IncrementGroup"/>
+            <xs:element minOccurs="0" name="NewBusinessId" type="xs:string"/>
+            <xs:element name="TakeFullTaxFreeCash" type="xs:boolean"/>
+            <xs:element name="TakePartialTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialTaxFreeCashAmount" type="xs:decimal"/>
+            <xs:element name="TakeTaxFreeRegularIncome" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TaxFreeRegularIncomeAmount" type="xs:decimal"/>
+            <xs:element name="TakePartialTaxableCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialTaxableCashAmount" type="xs:decimal"/>
+            <xs:element name="TakeTaxableRegularIncome" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TaxableRegularIncomeAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentFrequencyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentDay" type="xs:int"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercentage" type="xs:decimal"/>
+            <xs:element name="UseIncomeTap" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IncomeTapNumberOfMonths" type="xs:int"/>
+            <xs:element minOccurs="0" name="IncomeTapReviewFrequencyType" type="xs:string"/>
+            <xs:element name="IsMaxGad" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialGadAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PartialGadPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="FullyCrystalliseSavingsWithNoTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartiallyCrystalliseSavingsWithNoTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialCrystallisationAmountWithNoTaxFreeCash" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentBankAccountId" type="xs:string"/>
+            <xs:element minOccurs="0" name="TaxFreeIncomeActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="TaxableIncomeActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FullCrystallisationOfBlockTransferValue" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdatePayer" type="tns:UpdatePayer"/>
+    <xs:complexType name="UpdatePayer">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="PayerType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ExistingContributorId" type="xs:string"/>
+            <xs:element minOccurs="0" name="Address" type="tns:UpdatePayerAddress"/>
+            <xs:element minOccurs="0" name="ApplicantRelationshipType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Company" type="tns:CompanyInfo"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateBeneficiary" type="tns:UpdateBeneficiary"/>
+    <xs:complexType name="UpdateBeneficiary">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfBirth" type="xs:date"/>
+            <xs:element name="AllocationPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RelationshipType" type="xs:string"/>
+            <xs:element minOccurs="0" name="BeneficiaryType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IllustrationStructure" type="tns:IllustrationStructure"/>
+    <xs:complexType name="IllustrationStructure">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="Application" type="tns:IllustrationStructureApplication"/>
+            <xs:element name="ProductType" type="xs:string"/>
+            <xs:element name="AdviserId" type="xs:int"/>
+            <xs:element name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="TargetAgeAboveTaxReliefThresholdFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TargetAgeCapturedFlag" type="xs:boolean"/>
+            <xs:element name="QuoteStatusType" type="xs:string"/>
+            <xs:element name="NewBusinessType" type="xs:string"/>
+            <xs:element minOccurs="0" name="InflationAdjustedQuoteFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="StandardGrowthRateFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IncludeLifetimeAllowanceCalculationFlag" type="xs:boolean"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="IllustrationGroups" type="tns:IllustrationGroup"/>
+            <xs:element minOccurs="0" name="IncrementTotals" type="tns:IncrementTotals"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="AdviserCharges" type="tns:NewBusinessAdviserCharge"/>
+            <xs:element minOccurs="0" name="IllustrationFileName" type="xs:string"/>
+            <xs:element minOccurs="0" name="LifetimeAllowance" type="tns:LifetimeAllowance"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteHeader" type="tns:QuoteHeader"/>
+    <xs:complexType name="QuoteHeader">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="QuoteHeaderType">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="NewBusiness"/>
+                        <xs:enumeration value="Change"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element minOccurs="0" name="Quote" type="tns:Quote"/>
+            <xs:element minOccurs="0" name="QuoteRequest" type="tns:QuoteRequest"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateQuote" type="tns:UpdateQuote"/>
+    <xs:complexType name="UpdateQuote">
+        <xs:sequence>
+            <xs:element name="ProductType" type="xs:string"/>
+            <xs:element minOccurs="0" name="CaseId" type="xs:string"/>
+            <xs:element name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetAge" type="xs:int"/>
+            <xs:element name="AdviserId" type="xs:int"/>
+            <xs:element minOccurs="0" name="QuoteStatusType" type="xs:string"/>
+            <xs:element minOccurs="0" name="NewBusinessType" type="xs:string"/>
+            <xs:element minOccurs="0" name="LifetimeAllowance" type="tns:UpdateLifetimeAllowance"/>
+            <xs:element minOccurs="0" name="InflationAdjustedQuoteFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="StandardGrowthRateFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IncludeLifetimeAllowanceCalculationFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IllustrationFileName" type="xs:string"/>
+            <xs:element minOccurs="0" name="OtherMoneyType" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="OtherMoneys" type="tns:UpdateOtherMoney"/>
+            <xs:element minOccurs="0" name="IsAdvisedByFinancialAdviserFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="SendCashWarningFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="CashFundPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="IsBackDated" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateQuoteAdviserCharge" type="tns:CreateQuoteAdviserCharge"/>
+    <xs:complexType name="CreateQuoteAdviserCharge">
+        <xs:sequence>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element name="PeriodType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FrequencyType" type="xs:string"/>
+            <xs:element name="BasisType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ChargeTimingType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EffectiveDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="DelayFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="Delay" type="xs:int"/>
+            <xs:element minOccurs="0" name="PaymentsInstruction" type="xs:int"/>
+            <xs:element minOccurs="0" name="FacilitationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercent" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EscalationDate" type="xs:date"/>
+            <xs:element name="IsPlanLevel" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="LifetimeAllowanceProtection" type="tns:LifetimeAllowanceProtection"/>
+    <xs:complexType name="LifetimeAllowanceProtection">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ProtectionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="PercentageOfProtectedTaxFreeCash" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProtectionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProtectionFactor" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="BankAccount" type="tns:BankAccount"/>
+    <xs:complexType name="BankAccount">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+            <xs:element name="AccountNumber" type="xs:string"/>
+            <xs:element name="SortCode" type="xs:string"/>
+            <xs:element name="AccountName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="TrackerIdentifiable" type="tns:TrackerIdentifiable"/>
+    <xs:complexType name="TrackerIdentifiable">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateLifetimeAllowance" type="tns:CreateLifetimeAllowance"/>
+    <xs:complexType name="CreateLifetimeAllowance">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="LifetimeAllowanceUsedPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="LifetimeAllowanceUsedDifference" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="LifetimeAllowanceProtection" type="tns:CreateLifetimeAllowanceProtection"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteIncrement" type="tns:QuoteIncrement"/>
+    <xs:complexType name="QuoteIncrement">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="NewBusinessId" type="xs:string"/>
+            <xs:element minOccurs="0" name="GroupId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementType" type="xs:string"/>
+            <xs:element minOccurs="0" name="PolicyId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+            <xs:element name="IncrementGroup" type="tns:IncrementGroup"/>
+            <xs:element minOccurs="0" name="Transfer" type="tns:QuoteTransfer"/>
+            <xs:element minOccurs="0" name="Contribution" type="tns:QuoteContribution"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="FlexibleAccessInstructions" type="tns:FlexibleAccessInstructions"/>
+    <xs:complexType name="FlexibleAccessInstructions">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="FlexibleAccessInstruction" type="tns:FlexibleAccessInstruction"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateQuoteContributionValue" type="tns:CreateQuoteContributionValue"/>
+    <xs:complexType name="CreateQuoteContributionValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ContributionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContributorType" type="xs:string"/>
+            <xs:element minOccurs="0" name="MonetaryAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="Percentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EmploymentStatusType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CompanyInfo" type="tns:CompanyInfo"/>
+    <xs:complexType name="CompanyInfo">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="CompanyId" type="xs:string"/>
+            <xs:element minOccurs="0" name="CompanyName" type="xs:string"/>
+            <xs:element name="CompanyType" type="xs:string"/>
+            <xs:element name="RegisteredAddress" type="tns:Address"/>
+            <xs:element name="NatureOfBusinessType" type="xs:string"/>
+            <xs:element minOccurs="0" name="OtherNatureOfBusinessType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegistrationNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="VATNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegulatorName" type="xs:string"/>
+            <xs:element minOccurs="0" name="PrincipalPlaceOfBusiness" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfIncorporation" type="xs:date"/>
+            <xs:element minOccurs="0" name="CountryOfJurisdiction" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="CompanyBeneficialOwners" type="tns:CompanyBeneficialOwner"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Contributor" type="tns:Contributor"/>
+    <xs:complexType name="Contributor">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="PayerType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element minOccurs="0" name="Surname" type="xs:string"/>
+            <xs:element minOccurs="0" name="RelationshipType" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ExistingContributorId" type="xs:string"/>
+            <xs:element minOccurs="0" name="Company" type="tns:CompanyInfo"/>
+            <xs:element minOccurs="0" name="Address" type="tns:ContributorAddress"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateQuoteHeader" type="tns:CreateQuoteHeader"/>
+    <xs:complexType name="CreateQuoteHeader">
+        <xs:sequence>
+            <xs:element name="QuoteRequest" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="NewProviders" type="tns:NewProviders"/>
+    <xs:complexType name="NewProviders">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="NewProvider" type="tns:NewProvider"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Beneficiary" type="tns:Beneficiary"/>
+    <xs:complexType name="Beneficiary">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfBirth" type="xs:date"/>
+            <xs:element name="AllocationPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RelationshipType" type="xs:string"/>
+            <xs:element minOccurs="0" name="BeneficiaryType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteIncrements" type="tns:QuoteIncrements"/>
+    <xs:complexType name="QuoteIncrements">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="QuoteIncrement" type="tns:NewBusinessIncrement"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateContact" type="tns:UpdateContact"/>
+    <xs:complexType name="UpdateContact">
+        <xs:sequence>
+            <xs:element name="ContactType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:string"/>
+            <xs:element minOccurs="0" name="Address" type="tns:Address"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IncrementTotals" type="tns:IncrementTotals"/>
+    <xs:complexType name="IncrementTotals">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="TotalGrossSingleContributionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="TotalGrossRegularContributionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ClientRegularContributionTaxReliefAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ClientNetRegularContributionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ClientSingleContributionTaxReliefAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ClientNetSingleContributionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="MaximumTaxFreeCashAmount" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateFlexibleAccessInstruction" type="tns:UpdateFlexibleAccessInstruction"/>
+    <xs:complexType name="UpdateFlexibleAccessInstruction">
+        <xs:sequence>
+            <xs:element name="FlexibleAccessType" type="xs:string"/>
+            <xs:element name="TakeFullTaxFreeCash" type="xs:boolean"/>
+            <xs:element name="TakePartialTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialTaxFreeCashAmount" type="xs:decimal"/>
+            <xs:element name="TakeTaxFreeRegularIncome" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TaxFreeRegularIncomeAmount" type="xs:decimal"/>
+            <xs:element name="TakePartialTaxableCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialTaxableCashAmount" type="xs:decimal"/>
+            <xs:element name="TakeTaxableRegularIncome" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TaxableRegularIncomeAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentFrequencyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentDay" type="xs:int"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercentage" type="xs:decimal"/>
+            <xs:element name="UseIncomeTap" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IncomeTapNumberOfMonths" type="xs:int"/>
+            <xs:element minOccurs="0" name="IncomeTapReviewFrequencyType" type="xs:string"/>
+            <xs:element name="IsMaxGad" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialGadAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PartialGadPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="FullyCrystalliseSavingsWithNoTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartiallyCrystalliseSavingsWithNoTaxFreeCash" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PartialCrystallisationAmountWithNoTaxFreeCash" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentBankAccountId" type="xs:string"/>
+            <xs:element minOccurs="0" name="TaxFreeIncomeActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="TaxableIncomeActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FullCrystallisationOfBlockTransferValue" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteTransfer" type="tns:QuoteTransfer"/>
+    <xs:complexType name="QuoteTransfer">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="TransferAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProviderReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProviderPlanReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="BeneficiaryInDrawdownFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DeathAtSeventyFiveAgeOrAboveFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IncomeDrawdownType" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncomeDrawdown" type="tns:IncomeDrawdown"/>
+            <xs:element minOccurs="0" name="AmountOriginallyCrystallised" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="BlockTransferFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedPensionAgeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedPensionAgeType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EarliestEntitledRetirementAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="ProtectedTaxFreeCash" type="tns:ProtectedTaxFreeCashModel"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IllustrationGroup" type="tns:IllustrationGroup"/>
+    <xs:complexType name="IllustrationGroup">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="IllustrationGroupIncrements" type="tns:IllustrationGroupIncrement"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="FlexibleAccessInstructions" type="tns:IllustrationGroupFlexibleAccessInstruction"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="FlexibleAccess" type="tns:IllustrationGroupFlexibleAccess"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="WithdrawalFunds" type="tns:WithdrawalFunds"/>
+    <xs:complexType name="WithdrawalFunds">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="WithdrawalFund" type="tns:WithdrawalFund"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ApplicantSearch" type="tns:ApplicantSearch"/>
+    <xs:complexType name="ApplicantSearch">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Surname" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProposalAdviserCharges" type="tns:ProposalAdviserCharges"/>
+    <xs:complexType name="ProposalAdviserCharges">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ProposalAdviserCharge" type="tns:ProposalAdviserCharge"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateQuote" type="tns:CreateQuote"/>
+    <xs:complexType name="CreateQuote">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Quote" type="tns:QuoteHref"/>
+            <xs:element name="Application" type="tns:CreateApplication"/>
+            <xs:element minOccurs="0" name="CaseId" type="xs:string"/>
+            <xs:element name="ProductType" type="xs:string"/>
+            <xs:element name="AdviserId" type="xs:int"/>
+            <xs:element name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="QuoteStatusType" type="xs:string"/>
+            <xs:element name="NewBusinessType" type="xs:string"/>
+            <xs:element minOccurs="0" name="LifetimeAllowance" type="tns:CreateLifetimeAllowance"/>
+            <xs:element minOccurs="0" name="InflationAdjustedQuoteFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="StandardGrowthRateFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IncludeLifetimeAllowanceCalculationFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="OtherMoneyType" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="OtherMoneys" type="tns:CreateOtherMoney"/>
+            <xs:element minOccurs="0" name="IsAdvisedByFinancialAdviserFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="SendCashWarningFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="CashFundPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="IsBackDated" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateProposalAdviserCharges" type="tns:CreateProposalAdviserCharges"/>
+    <xs:complexType name="CreateProposalAdviserCharges">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="CreateProposalAdviserCharge" type="tns:CreateProposalAdviserCharge"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProposalSearch" type="tns:ProposalSearch"/>
+    <xs:complexType name="ProposalSearch">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ApplicationId" type="xs:string"/>
+            <xs:element minOccurs="0" name="ApplicantId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteIdentifiables" type="tns:QuoteIdentifiables"/>
+    <xs:complexType name="QuoteIdentifiables">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="QuoteIdentifiable" type="tns:QuoteIdentifiable"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IllustrationGroupContribution" type="tns:IllustrationGroupContribution"/>
+    <xs:complexType name="IllustrationGroupContribution">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContributionFrequencyType" type="xs:string"/>
+            <xs:element name="ContributionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="ClientEarnings" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationRate" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ContributionValue" type="tns:ContributionValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IllustrationStructureApplicant" type="tns:IllustrationStructureApplicant"/>
+    <xs:complexType name="IllustrationStructureApplicant">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="TitleType" type="xs:string"/>
+            <xs:element name="FirstName" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="NINumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="EmploymentStatus" type="xs:string"/>
+            <xs:element name="SexType" type="xs:string"/>
+            <xs:element minOccurs="0" name="CustomerId" type="xs:long"/>
+            <xs:element minOccurs="0" name="CrownEmployeeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="AllowMarketingFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="UKEarningFlag" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IncrementContribution" type="tns:IncrementContribution"/>
+    <xs:complexType name="IncrementContribution">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="ApplicantId" type="xs:string"/>
+            <xs:element minOccurs="0" name="PayerId" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContributionFrequencyType" type="xs:string"/>
+            <xs:element name="ContributionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="EstimatedPaymentDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="FirstPaymentAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ClientEarnings" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentMethodType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationRate" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ChangeRPExecutionDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="BankAccount" type="tns:BankAccount"/>
+            <xs:element minOccurs="0" name="Payer" type="tns:Contributor"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ContributionValues" type="tns:ContributionValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProposalIdentifiables" type="tns:ProposalIdentifiables"/>
+    <xs:complexType name="ProposalIdentifiables">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ProposalIdentifiable" type="tns:ProposalIdentifiable"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProposalIncrements" type="tns:ProposalIncrements"/>
+    <xs:complexType name="ProposalIncrements">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ProposalIncrement" type="tns:NewBusinessProposalIncrement"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateBeneficiaryDetails" type="tns:UpdateBeneficiaryDetails"/>
+    <xs:complexType name="UpdateBeneficiaryDetails">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Notes" type="xs:string"/>
+            <xs:element name="DiscretionaryPaymentType" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Beneficiaries" type="tns:UpdateBeneficiary"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateLifetimeAllowanceProtection" type="tns:UpdateLifetimeAllowanceProtection"/>
+    <xs:complexType name="UpdateLifetimeAllowanceProtection">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ProtectionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="PercentageOfProtectedTaxFreeCash" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProtectionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProtectionFactor" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateLifetimeAllowance" type="tns:UpdateLifetimeAllowance"/>
+    <xs:complexType name="UpdateLifetimeAllowance">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="LifetimeAllowanceUsedPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="LifetimeAllowanceUsedDifference" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="LifetimeAllowanceProtection" type="tns:UpdateLifetimeAllowanceProtection"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Quote" type="tns:Quote"/>
+    <xs:complexType name="Quote">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="Application" type="tns:Application"/>
+            <xs:element name="ProductType" type="xs:string"/>
+            <xs:element name="AdviserId" type="xs:int"/>
+            <xs:element name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="CalculatedTargetDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="TargetAgeAboveTaxReliefThresholdFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TargetAgeCapturedFlag" type="xs:boolean"/>
+            <xs:element name="QuoteStatusType" type="xs:string"/>
+            <xs:element name="NewBusinessType" type="xs:string"/>
+            <xs:element minOccurs="0" name="InflationAdjustedQuoteFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="StandardGrowthRateFlag" type="xs:boolean"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Increments" type="tns:NewBusinessIncrement"/>
+            <xs:element minOccurs="0" name="IncrementTotals" type="tns:IncrementTotals"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="AdviserCharges" type="tns:NewBusinessAdviserCharge"/>
+            <xs:element minOccurs="0" name="IllustrationFileName" type="xs:string"/>
+            <xs:element minOccurs="0" name="LifetimeAllowance" type="tns:LifetimeAllowance"/>
+            <xs:element minOccurs="0" name="QuoteHeaderId" type="xs:string"/>
+            <xs:element minOccurs="0" name="OtherMoneyType" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="OtherMoneys" type="tns:OtherMoney"/>
+            <xs:element minOccurs="0" name="CreatedAt" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="IncludeLifetimeAllowanceCalculationFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IsAdvisedByFinancialAdviserFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="SendCashWarningFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="CashFundPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="IsBackDated" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateThirdPartyContact" type="tns:UpdateThirdPartyContact"/>
+    <xs:complexType name="UpdateThirdPartyContact">
+        <xs:sequence>
+            <xs:element name="ContactType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:string"/>
+            <xs:element minOccurs="0" name="Address" type="tns:UpdateThirdPartyAddress"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="OtherMoney" type="tns:OtherMoney"/>
+    <xs:complexType name="OtherMoney">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Amount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="AnnualManagementCharge" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PlanNumber" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProposalIdentifiable" type="tns:ProposalIdentifiable"/>
+    <xs:complexType name="ProposalIdentifiable">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="CaseId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreatePayerAddress" type="tns:CreatePayerAddress"/>
+    <xs:complexType name="CreatePayerAddress">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="AddressLine1" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine2" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine3" type="xs:string"/>
+            <xs:element minOccurs="0" name="City" type="xs:string"/>
+            <xs:element minOccurs="0" name="CountryType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Postcode" type="xs:string"/>
+            <xs:element minOccurs="0" name="Email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="PatchProposalTransfer" type="tns:PatchProposalTransfer"/>
+    <xs:complexType name="PatchProposalTransfer">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ActualValue" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EstimatedValue" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProviderReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProviderPlanReference" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateIncrementGroupMember" type="tns:CreateIncrementGroupMember"/>
+    <xs:complexType name="CreateIncrementGroupMember">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="IncrementGroupId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateIncrementContribution" type="tns:UpdateIncrementContribution"/>
+    <xs:complexType name="UpdateIncrementContribution">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ApplicantId" type="xs:string"/>
+            <xs:element minOccurs="0" name="PayerId" type="xs:string"/>
+            <xs:element minOccurs="0" name="BankAccountId" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContributionFrequencyType" type="xs:string"/>
+            <xs:element name="ContributionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="EstimatedPaymentDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="FirstPaymentAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ClientEarnings" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentMethodType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationRate" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ChangeRPExecutionDate" type="xs:date"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ContributionValues" type="tns:UpdateContributionValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateWithdrawalFund" type="tns:UpdateWithdrawalFund"/>
+    <xs:complexType name="UpdateWithdrawalFund">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="WithdrawalInstructionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="WithdrawalType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FundId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProposalTransfer" type="tns:ProposalTransfer"/>
+    <xs:complexType name="ProposalTransfer">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="ActualValue" type="xs:decimal"/>
+            <xs:element name="BlockTransferFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ConfirmEarliestEntitledRetirementAgeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="EarliestEntitledRetirementAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="EarmarkingOrderFlag" type="xs:boolean"/>
+            <xs:element name="EstimatedValue" type="xs:decimal"/>
+            <xs:element name="FullTransferFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="GuaranteeDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="PensionSharingOrderFlag" type="xs:boolean"/>
+            <xs:element name="ProtectedPensionAgeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedPensionAgeType" type="xs:string"/>
+            <xs:element name="TransferType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProviderReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProviderPlanReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="BeneficiaryInDrawdownFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DeathAtSeventyFiveAgeOrAboveFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ValueCrystallisedFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedTaxFreeCash" type="tns:ProtectedTaxFreeCashModel"/>
+            <xs:element minOccurs="0" name="NewProvider" type="tns:NewProvider"/>
+            <xs:element name="InsistentClientFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IncomeDrawdownType" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncomeDrawdown" type="tns:IncomeDrawdown"/>
+            <xs:element minOccurs="0" name="SubscriptionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EstimatedCurrentYearContributionValue" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ActualCurrentYearContributionValue" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Applicant" type="tns:Applicant"/>
+    <xs:complexType name="Applicant">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="TitleType" type="xs:string"/>
+            <xs:element name="FirstName" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="NINumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="EmploymentStatus" type="xs:string"/>
+            <xs:element name="SexType" type="xs:string"/>
+            <xs:element minOccurs="0" name="CustomerId" type="xs:long"/>
+            <xs:element minOccurs="0" name="CrownEmployeeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="AllowMarketingFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="LivesInScotlandFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="UKEarningFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="AmlConsentGiven" type="xs:boolean"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Contacts" type="tns:Contact"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateQuoteIncrement" type="tns:CreateQuoteIncrement"/>
+    <xs:complexType name="CreateQuoteIncrement">
+        <xs:sequence>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element minOccurs="0" name="PolicyId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="Transfer" type="tns:CreateQuoteTransfer"/>
+            <xs:element minOccurs="0" name="Contribution" type="tns:CreateQuoteContribution"/>
+            <xs:element minOccurs="0" name="IncrementGroupMember" type="tns:CreateIncrementGroupMember"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ExistingPlan" type="tns:ExistingPlan"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ThirdPartyAddress" type="tns:ThirdPartyAddress"/>
+    <xs:complexType name="ThirdPartyAddress">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ForeignAddressFlag" type="xs:boolean"/>
+            <xs:element name="AddressType" type="xs:string"/>
+            <xs:element name="AddressLine1" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine2" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine3" type="xs:string"/>
+            <xs:element name="City" type="xs:string"/>
+            <xs:element name="Postcode" type="xs:string"/>
+            <xs:element name="CountryType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateContact" type="tns:CreateContact"/>
+    <xs:complexType name="CreateContact">
+        <xs:sequence>
+            <xs:element name="ContactType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:string"/>
+            <xs:element minOccurs="0" name="Address" type="tns:Address"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateThirdPartyAddress" type="tns:CreateThirdPartyAddress"/>
+    <xs:complexType name="CreateThirdPartyAddress">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ForeignAddressFlag" type="xs:boolean"/>
+            <xs:element name="AddressType" type="xs:string"/>
+            <xs:element name="AddressLine1" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine2" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine3" type="xs:string"/>
+            <xs:element name="City" type="xs:string"/>
+            <xs:element name="Postcode" type="xs:string"/>
+            <xs:element name="CountryType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IncomeDrawdown" type="tns:IncomeDrawdown"/>
+    <xs:complexType name="IncomeDrawdown">
+        <xs:sequence>
+            <xs:element name="ReviewDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="MaxGadAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="IncomeTaken" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="NextReviewDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="RemainingIncomeForCurrentGadYear" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Plan" type="tns:Plan"/>
+    <xs:complexType name="Plan">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Increments" type="tns:IncrementHref"/>
+            <xs:element minOccurs="0" name="PlanNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementGroupId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="IncrementGroup" type="tns:IncrementGroup"/>
+    <xs:complexType name="IncrementGroup">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementGroupType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProductType" type="xs:string"/>
+            <xs:element minOccurs="0" name="PlanId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateProposalIncrement" type="tns:CreateProposalIncrement"/>
+    <xs:complexType name="CreateProposalIncrement">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="CaseId" type="xs:string"/>
+            <xs:element minOccurs="0" name="PolicyId" type="xs:string"/>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="Transfer" type="tns:CreateProposalTransfer"/>
+            <xs:element minOccurs="0" name="Contribution" type="tns:CreateIncrementContribution"/>
+            <xs:element minOccurs="0" name="IncrementGroupMember" type="tns:CreateIncrementGroupMember"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ExistingPlan" type="tns:ExistingPlan"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateQuoteTransfer" type="tns:UpdateQuoteTransfer"/>
+    <xs:complexType name="UpdateQuoteTransfer">
+        <xs:sequence>
+            <xs:element name="TransferAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProviderReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProviderPlanReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="AmountOriginallyCrystallised" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="BlockTransferFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedPensionAgeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedPensionAgeType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EarliestEntitledRetirementAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="ProtectedTaxFreeCash" type="tns:ProtectedTaxFreeCashModel"/>
+            <xs:element minOccurs="0" name="BeneficiaryInDrawdownFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DeathAtSeventyFiveAgeOrAboveFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IncomeDrawdownType" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncomeDrawdown" type="tns:UpdateIncomeDrawdown"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteSearch" type="tns:QuoteSearch"/>
+    <xs:complexType name="QuoteSearch">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ApplicationId" type="xs:string"/>
+            <xs:element minOccurs="0" name="ApplicantId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateProposal" type="tns:UpdateProposal"/>
+    <xs:complexType name="UpdateProposal">
+        <xs:sequence>
+            <xs:element name="ProductType" type="xs:string"/>
+            <xs:element name="AdviserId" type="xs:int"/>
+            <xs:element name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="MpaaTriggerDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="ProposalStatusType" type="xs:string"/>
+            <xs:element minOccurs="0" name="DeclarationDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="ApplicationReceivedDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="IsCleanApplication" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="LastInformationReceivedDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="CaseId" type="xs:string"/>
+            <xs:element minOccurs="0" name="AdviceType" type="xs:string"/>
+            <xs:element minOccurs="0" name="LifetimeAllowance" type="tns:UpdateLifetimeAllowance"/>
+            <xs:element minOccurs="0" name="OtherMoneyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ApplicationDownloadDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="AwardProfitShareThisYearFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IsNonAdvisedFlag" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteContribution" type="tns:QuoteContribution"/>
+    <xs:complexType name="QuoteContribution">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContributionFrequencyType" type="xs:string"/>
+            <xs:element name="ContributionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="ClientEarnings" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationRate" type="xs:decimal"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ContributionValues" type="tns:ContributionValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Address" type="tns:Address"/>
+    <xs:complexType name="Address">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ForeignAddressFlag" type="xs:boolean"/>
+            <xs:element name="AddressLine1" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine2" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine3" type="xs:string"/>
+            <xs:element name="City" type="xs:string"/>
+            <xs:element minOccurs="0" name="Postcode" type="xs:string"/>
+            <xs:element name="CountryType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteByCase" type="tns:QuoteByCase"/>
+    <xs:complexType name="QuoteByCase">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="AuthorizedThirdParties" type="tns:AuthorizedThirdParties"/>
+    <xs:complexType name="AuthorizedThirdParties">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="AuthorizedThirdParty" type="tns:AuthorizedThirdParty"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateWithdrawalFund" type="tns:CreateWithdrawalFund"/>
+    <xs:complexType name="CreateWithdrawalFund">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="WithdrawalInstructionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="WithdrawalType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FundId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Proposals" type="tns:Proposals"/>
+    <xs:complexType name="Proposals">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Metadata" type="tns:Metadata"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Proposal" type="tns:Proposal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteByCaseList" type="tns:QuoteByCaseList"/>
+    <xs:complexType name="QuoteByCaseList">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Quote" type="tns:QuoteByCase"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ContributorAddress" type="tns:ContributorAddress"/>
+    <xs:complexType name="ContributorAddress">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="AddressLine1" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine2" type="xs:string"/>
+            <xs:element minOccurs="0" name="AddressLine3" type="xs:string"/>
+            <xs:element minOccurs="0" name="City" type="xs:string"/>
+            <xs:element minOccurs="0" name="Country" type="xs:string"/>
+            <xs:element minOccurs="0" name="Postcode" type="xs:string"/>
+            <xs:element minOccurs="0" name="Email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteIdentifiable" type="tns:QuoteIdentifiable"/>
+    <xs:complexType name="QuoteIdentifiable">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ExistingPlan" type="tns:ExistingPlan"/>
+    <xs:complexType name="ExistingPlan">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="HasActiveAccumulationFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="LivePlanId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IsCorePlan" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="PayerType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="BeneficiaryDetails" type="tns:BeneficiaryDetails"/>
+    <xs:complexType name="BeneficiaryDetails">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="Notes" type="xs:string"/>
+            <xs:element minOccurs="0" name="DiscretionaryPaymentType" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Beneficiaries" type="tns:Beneficiary"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="PlanStructure" type="tns:PlanStructure"/>
+    <xs:complexType name="PlanStructure">
+        <xs:sequence>
+            <xs:element name="NewBusinessId" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" name="Plan" type="tns:Plan"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="PatchProposalIncrement" type="tns:PatchProposalIncrement"/>
+    <xs:complexType name="PatchProposalIncrement">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="PolicyId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ApplicantIdentifiable" type="tns:ApplicantIdentifiable"/>
+    <xs:complexType name="ApplicantIdentifiable">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="CaseId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="QuoteHeaderIdentifiable" type="tns:QuoteHeaderIdentifiable"/>
+    <xs:complexType name="QuoteHeaderIdentifiable">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateProposalTransfer" type="tns:UpdateProposalTransfer"/>
+    <xs:complexType name="UpdateProposalTransfer">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ActualValue" type="xs:decimal"/>
+            <xs:element name="BlockTransferFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ConfirmEarliestEntitledRetirementAgeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="EarliestEntitledRetirementAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="EarmarkingOrderFlag" type="xs:boolean"/>
+            <xs:element name="EstimatedValue" type="xs:decimal"/>
+            <xs:element name="FullTransferFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="GuaranteeDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="PensionSharingOrderFlag" type="xs:boolean"/>
+            <xs:element name="InsistentClientFlag" type="xs:boolean"/>
+            <xs:element name="ProtectedPensionAgeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedPensionAgeType" type="xs:string"/>
+            <xs:element name="TransferType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProviderReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProviderPlanReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="BeneficiaryInDrawdownFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DeathAtSeventyFiveAgeOrAboveFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ValueCrystallisedFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedTaxFreeCash" type="tns:ProtectedTaxFreeCashModel"/>
+            <xs:element name="IncomeDrawdownType" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncomeDrawdown" type="tns:UpdateIncomeDrawdown"/>
+            <xs:element minOccurs="0" name="SubscriptionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EstimatedCurrentYearContributionValue" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ActualCurrentYearContributionValue" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateProposalIncrement" type="tns:UpdateProposalIncrement"/>
+    <xs:complexType name="UpdateProposalIncrement">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element minOccurs="0" name="PolicyId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="Transfer" type="tns:UpdateProposalTransfer"/>
+            <xs:element minOccurs="0" name="Contribution" type="tns:UpdateIncrementContribution"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateAuthorizedThirdParty" type="tns:UpdateAuthorizedThirdParty"/>
+    <xs:complexType name="UpdateAuthorizedThirdParty">
+        <xs:sequence>
+            <xs:element name="ThirdPartyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="TitleType" type="xs:string"/>
+            <xs:element name="FirstName" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="IsPrimaryCorrespondent" type="xs:boolean"/>
+            <xs:element maxOccurs="unbounded" name="Contacts" type="tns:UpdateThirdPartyContact"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateBankAccount" type="tns:CreateBankAccount"/>
+    <xs:complexType name="CreateBankAccount">
+        <xs:sequence>
+            <xs:element name="AccountNumber" type="xs:string"/>
+            <xs:element name="SortCode" type="xs:string"/>
+            <xs:element name="AccountName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="FlexibleAccessList" type="tns:FlexibleAccessList"/>
+    <xs:complexType name="FlexibleAccessList">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="FlexibleAccess" type="tns:FlexibleAccess"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="WithdrawalInstruction" type="tns:WithdrawalInstruction"/>
+    <xs:complexType name="WithdrawalInstruction">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="IncrementGroup" type="tns:IncrementGroup"/>
+            <xs:element minOccurs="0" name="NewBusinessId" type="xs:string"/>
+            <xs:element minOccurs="0" name="OneOffWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RegularWithdrawalFrequencyType" type="xs:string"/>
+            <xs:element minOccurs="0" name="RegularIncomePaymentDay" type="xs:int"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercentage" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentBankAccountId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateIncrementContribution" type="tns:CreateIncrementContribution"/>
+    <xs:complexType name="CreateIncrementContribution">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ApplicantId" type="xs:string"/>
+            <xs:element minOccurs="0" name="PayerId" type="xs:string"/>
+            <xs:element minOccurs="0" name="BankAccountId" type="xs:string"/>
+            <xs:element minOccurs="0" name="ContributionFrequencyType" type="xs:string"/>
+            <xs:element name="ContributionAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="EstimatedPaymentDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="FirstPaymentAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ClientEarnings" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="PaymentMethodType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationRate" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ChangeRPExecutionDate" type="xs:date"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ContributionValues" type="tns:CreateContributionValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ApplicantHref" type="tns:ApplicantHref"/>
+    <xs:complexType name="ApplicantHref">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="CustomerId" type="xs:long"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="WithdrawalInstructions" type="tns:WithdrawalInstructions"/>
+    <xs:complexType name="WithdrawalInstructions">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="WithdrawalInstruction" type="tns:WithdrawalInstruction"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateApplicant" type="tns:UpdateApplicant"/>
+    <xs:complexType name="UpdateApplicant">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="TitleType" type="xs:string"/>
+            <xs:element name="FirstName" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="NINumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="EmploymentStatus" type="xs:string"/>
+            <xs:element name="SexType" type="xs:string"/>
+            <xs:element minOccurs="0" name="CustomerId" type="xs:long"/>
+            <xs:element minOccurs="0" name="CrownEmployeeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="AllowMarketingFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="LivesInScotlandFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="AmlConsentGiven" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="UKEarningFlag" type="xs:boolean"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Contacts" type="tns:UpdateContact"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateProposalAdviserCharge" type="tns:CreateProposalAdviserCharge"/>
+    <xs:complexType name="CreateProposalAdviserCharge">
+        <xs:sequence>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element name="PeriodType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FrequencyType" type="xs:string"/>
+            <xs:element name="BasisType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ChargeTimingType" type="xs:string"/>
+            <xs:element minOccurs="0" name="Value" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EffectiveDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="DelayFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="Delay" type="xs:int"/>
+            <xs:element minOccurs="0" name="PaymentsInstruction" type="xs:int"/>
+            <xs:element minOccurs="0" name="FacilitationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EscalationPercent" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="EscalationDate" type="xs:date"/>
+            <xs:element name="IsPlanLevel" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateQuoteTransfer" type="tns:CreateQuoteTransfer"/>
+    <xs:complexType name="CreateQuoteTransfer">
+        <xs:sequence>
+            <xs:element name="TransferAmount" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ProviderReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProviderPlanReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="AmountOriginallyCrystallised" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="BlockTransferFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedPensionAgeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedPensionAgeType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EarliestEntitledRetirementAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="ProtectedTaxFreeCash" type="tns:ProtectedTaxFreeCashModel"/>
+            <xs:element minOccurs="0" name="BeneficiaryInDrawdownFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DeathAtSeventyFiveAgeOrAboveFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="IncomeDrawdownType" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncomeDrawdown" type="tns:CreateIncomeDrawdown"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateProposalTransfer" type="tns:CreateProposalTransfer"/>
+    <xs:complexType name="CreateProposalTransfer">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ActualValue" type="xs:decimal"/>
+            <xs:element name="BlockTransferFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ConfirmEarliestEntitledRetirementAgeFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="EarliestEntitledRetirementAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="EarmarkingOrderFlag" type="xs:boolean"/>
+            <xs:element name="EstimatedValue" type="xs:decimal"/>
+            <xs:element name="FullTransferFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="GuaranteeDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="PensionSharingOrderFlag" type="xs:boolean"/>
+            <xs:element name="ProtectedPensionAgeFlag" type="xs:boolean"/>
+            <xs:element name="InsistentClientFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedPensionAgeType" type="xs:string"/>
+            <xs:element name="TransferType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProviderReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProviderPlanReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="BeneficiaryInDrawdownFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DeathAtSeventyFiveAgeOrAboveFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ValueCrystallisedFlag" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="ProtectedTaxFreeCash" type="tns:ProtectedTaxFreeCashModel"/>
+            <xs:element name="IncomeDrawdownType" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncomeDrawdown" type="tns:CreateIncomeDrawdown"/>
+            <xs:element minOccurs="0" name="SubscriptionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="EstimatedCurrentYearContributionValue" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ActualCurrentYearContributionValue" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="NewBusinessIncrement" type="tns:NewBusinessIncrement"/>
+    <xs:complexType name="NewBusinessIncrement">
+        <xs:sequence>
+            <xs:element name="Id" type="xs:string"/>
+            <xs:element name="NewBusinessId" type="xs:string"/>
+            <xs:element minOccurs="0" name="GroupId" type="xs:string"/>
+            <xs:element name="IncrementType" type="xs:string"/>
+            <xs:element name="IncrementGroup" type="tns:IncrementGroup"/>
+            <xs:element minOccurs="0" name="PolicyId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ExistingPlan" type="tns:ExistingPlan"/>
+            <xs:element minOccurs="0" name="Transfer" type="tns:QuoteTransfer"/>
+            <xs:element minOccurs="0" name="Contribution" type="tns:QuoteContribution"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Metadata" type="tns:Metadata"/>
+    <xs:complexType name="Metadata">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ItemCount" type="xs:int"/>
+            <xs:element minOccurs="0" name="Page" type="xs:int"/>
+            <xs:element minOccurs="0" name="PageSize" type="xs:int"/>
+            <xs:element minOccurs="0" name="PageSizeMax" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="PatchPolicyIncrement" type="tns:PatchPolicyIncrement"/>
+    <xs:complexType name="PatchPolicyIncrement">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="PolicyId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+            <xs:element minOccurs="0" name="Transfer" type="tns:PatchProposalTransfer"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="PatchProposal" type="tns:PatchProposal"/>
+    <xs:complexType name="PatchProposal">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="ProductType" type="xs:string"/>
+            <xs:element minOccurs="0" name="StartDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="TargetAge" type="xs:int"/>
+            <xs:element minOccurs="0" name="MpaaTriggerDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="AdviserId" type="xs:int"/>
+            <xs:element minOccurs="0" name="ProposalStatusType" type="xs:string"/>
+            <xs:element minOccurs="0" name="DeclarationDate" type="xs:date"/>
+            <xs:element minOccurs="0" name="CaseId" type="xs:string"/>
+            <xs:element minOccurs="0" name="SubscriptionLimit" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="RemainingSubscriptionValue" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ExistingSubscriptionValue" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="ApplicationDownloadDate" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateTrackerEvent" type="tns:CreateTrackerEvent"/>
+    <xs:complexType name="CreateTrackerEvent">
+        <xs:sequence>
+            <xs:element name="ReferenceId" type="xs:string"/>
+            <xs:element minOccurs="0" name="EventDescription" type="xs:string"/>
+            <xs:element name="EventDate" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="IncrementId" type="xs:string"/>
+            <xs:element minOccurs="0" name="IncrementReference" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreatePayer" type="tns:CreatePayer"/>
+    <xs:complexType name="CreatePayer">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="PayerType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element name="Surname" type="xs:string"/>
+            <xs:element minOccurs="0" name="ApplicantRelationshipType" type="xs:string"/>
+            <xs:element minOccurs="0" name="DateOfBirth" type="xs:date"/>
+            <xs:element minOccurs="0" name="ActionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="ExistingContributorId" type="xs:string"/>
+            <xs:element minOccurs="0" name="Company" type="tns:CreateCompanyInfo"/>
+            <xs:element minOccurs="0" name="Address" type="tns:CreatePayerAddress"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="WithdrawalFund" type="tns:WithdrawalFund"/>
+    <xs:complexType name="WithdrawalFund">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Id" type="xs:string"/>
+            <xs:element minOccurs="0" name="WithdrawalInstructionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="WithdrawalType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FundId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

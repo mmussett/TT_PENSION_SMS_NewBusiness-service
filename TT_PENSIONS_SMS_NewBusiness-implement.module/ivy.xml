@@ -1,0 +1,19 @@
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+  <info organisation="${bw6.organisation}.TT_PENSIONS_SMS_NewBusiness" module="TT_PENSIONS_SMS_NewBusiness-implement.module" revision="2.0"/>
+
+  <configurations defaultconf="compile" defaultconfmapping="compile->*">
+    <conf name="compile" visibility="public"/>
+    <conf name="optional" visibility="private"/>
+  </configurations>
+
+  <publications>
+    <artifact name="${ivy.module}" type="zip" conf="compile"/>
+    <artifact name="${ivy.module}" type="pom" conf="optional"/>
+  </publications>
+
+  <dependencies>
+  	<dependency org="${bw6.organisation}" name="LIB_UTIL_CSF-implement.module" rev="2.0.+" conf="compile"/>
+    <dependency org="${bw6.organisation}.TT_PENSIONS_SMS_NewBusiness" name="TT_PENSIONS_SMS_NewBusiness-interface.module" rev="2.0.+" conf="compile"/>
+  </dependencies>
+  
+</ivy-module>

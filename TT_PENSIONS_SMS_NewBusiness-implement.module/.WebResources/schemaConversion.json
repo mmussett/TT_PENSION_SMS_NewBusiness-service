@@ -1,0 +1,33 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/TT_PENSIONS_SMS_NewBusiness-interface.module/Service Descriptors/External/TT/SMS/NewBusiness/SalesManagement-NewBusiness-v4.xsd",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "xxTTTARGETNAMESPACExx"
+    },
+    {
+        "jsonSchemaLocation": "/TT_PENSIONS_SMS_NewBusiness-implement.module/Service Descriptors/External/TT/SMS/NewBusiness/SalesManagement.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/SalesManagement.Api/T1550656229709Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/TT_PENSIONS_SMS_NewBusiness-implement.module/Service Descriptors/External/TT/SMS/NewBusiness/SalesManagement.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "http://www.royallondon.com/xsd/service/pensions/sales/new-business/v6"
+    },
+    {
+        "jsonSchemaLocation": "/TT_PENSIONS_SMS_NewBusiness-implement.module/Service Descriptors/External/TT/SMS/NewBusiness/SalesManagement-NewBusiness-v4.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "http://www.royallondon.com/xsd/service/pensions/sales/new-business/v6"
+    },
+    {
+        "jsonSchemaLocation": "/TT_PENSIONS_SMS_NewBusiness-implement.module/Service Descriptors/External/TT/SMS/NewBusiness/SalesManagement-NewBusiness-v4.json",
+        "conversionType": "generated",
+        "xsdSchemaLocation": "/TT_PENSIONS_SMS_NewBusiness-implement.module/Schemas/External/TT/SMS/NewBusiness/SalesManagement-NewBusiness-v4.xsd",
+        "xsdSchemaTargetNamespace": "http://www.royallondon.com/xsd/service/pensions/sales/new-business/v6"
+    },
+    {
+        "jsonSchemaLocation": "/TT_PENSIONS_SMS_NewBusiness-implement.module/Service Descriptors/External/TT/SMS/NewBusiness/NewBusiness_v7.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/SalesManagement.Api/T1692715364565Converted/JsonSchema"
+    }
+]}

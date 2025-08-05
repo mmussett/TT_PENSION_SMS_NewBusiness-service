@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:Q1="http://tns.tibco.com/bw/REST" xmlns:pref="http://www.royallondon.com/xsd/resource/util/csf/rest/v1" xmlns:source="bw.rest" xmlns:tns="http://xmlns.example.com/Default/headerParameters" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://xmlns.example.com/Default/headerParameters">
+
+ 
+
+    <xs:import namespace="http://tns.tibco.com/bw/REST"/>
+
+ 
+
+    <xs:complexType name="RestReference3PostHeaderType">
+
+        <xs:complexContent>
+
+            <xs:extension base="Q1:httpTransportHeaders">
+
+                <xs:sequence>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-TransactionID" type="xs:string"/>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-CorrelationID" type="xs:string"/>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-ExecuteOnlyOnce" type="xs:string"/>
+
+                </xs:sequence>
+
+            </xs:extension>
+
+        </xs:complexContent>
+
+    </xs:complexType>
+
+    <xs:element name="RestReference3PostHeader" type="tns:RestReference3PostHeaderType"/>
+	
+	 <xs:complexType name="RestReferenceDeleteHeaderType">
+
+        <xs:complexContent>
+
+            <xs:extension base="Q1:httpTransportHeaders">
+
+                <xs:sequence>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-TransactionID" type="xs:string"/>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-CorrelationID" type="xs:string"/>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-ExecuteOnlyOnce" type="xs:string"/>
+
+                </xs:sequence>
+
+            </xs:extension>
+
+        </xs:complexContent>
+
+    </xs:complexType>
+
+    <xs:element name="RestReferenceDeleteHeader" type="tns:RestReferenceDeleteHeaderType"/>
+    
+    
+
+ 
+
+ 
+
+    <xs:complexType name="RestReference3GetHeaderType">
+
+        <xs:complexContent>
+
+            <xs:extension base="Q1:httpTransportHeaders">
+
+                <xs:sequence>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-TransactionID" type="xs:string"/>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-CorrelationID" type="xs:string"/>
+
+                </xs:sequence>
+
+            </xs:extension>
+
+        </xs:complexContent>
+
+    </xs:complexType>
+
+    <xs:complexType name="RestReferencePatchHeaderType">
+
+        <xs:complexContent>
+
+            <xs:extension base="Q1:httpTransportHeaders">
+
+                <xs:sequence>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-TransactionID" type="xs:string"/>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-CorrelationID" type="xs:string"/>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-ExecuteOnlyOnce" type="xs:string"/>
+
+                </xs:sequence>
+
+            </xs:extension>
+
+        </xs:complexContent>
+
+    </xs:complexType>
+
+    <xs:element name="RestReferencePatchHeader" type="tns:RestReferencePatchHeaderType"/>
+
+    <xs:element name="RestReference3GetHeader" type="tns:RestReference3GetHeaderType"/>
+
+    <xs:complexType name="RestReferencePutHeaderType">
+
+        <xs:complexContent>
+
+            <xs:extension base="Q1:httpTransportHeaders">
+
+                <xs:sequence>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-TransactionID" type="xs:string"/>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-CorrelationID" type="xs:string"/>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-ExecuteOnlyOnce" type="xs:string"/>
+
+                </xs:sequence>
+
+            </xs:extension>
+
+        </xs:complexContent>
+
+    </xs:complexType>
+
+    <xs:element name="RestReferencePutHeader" type="tns:RestReferencePutHeaderType"/>
+
+ 
+
+ 
+
+    <xs:complexType name="RestReferenceGetHeaderType">
+
+        <xs:complexContent>
+
+            <xs:extension base="Q1:httpTransportHeaders">
+
+                <xs:sequence>
+
+                    <xs:element maxOccurs="1" minOccurs="0" name="X-TransactionID" type="xs:string"/>
+
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="X-CorrelationID" type="xs:string"/>
+
+                </xs:sequence>
+
+            </xs:extension>
+
+        </xs:complexContent>
+
+    </xs:complexType>
+
+ 
+
+    <xs:element name="RestReferenceGetHeader" type="tns:RestReferenceGetHeaderType"/>
+
+</xs:schema>

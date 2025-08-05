@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: TT_PENSIONS_SMS_NewBusiness-interface Module
+Bundle-SymbolicName: TT_PENSIONS_SMS_NewBusiness-interface.module
+Bundle-Version: 2.0.0.qualifier
+Bundle-Vendor: TIBCO Software Inc.
+Require-Bundle: LIB_UTIL_CSF-implement.module;bundle-version="2.0.0"
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-SharedModule: META-INF/module.bwm
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
+ com.tibco.bw.module; filter:="(&(name=LIB_UTIL_CSF-implement.module)(version=2.0.0))"
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Provide-Capability: com.tibco.bw.module; name="TT_PENSIONS_SMS_NewBusiness-interface.module"; version:Version="2.0.0",
+ com.tibco.bw.schemas; ns="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness",
+ com.tibco.bw.schemas; ns="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness/newbusinesscommon",
+ com.tibco.bw.schemas; ns="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness/newbusinesscommon/v1",
+ com.tibco.bw.schemas; ns="http://www.royallondon.com/xsd/interface/tt/pensions/sms/newbusiness/v3"
+TIBCO-BW-Version: 6.4.1 V22 2017-08-17

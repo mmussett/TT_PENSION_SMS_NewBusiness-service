@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: TT_PENSIONS_SMS_NewBusiness-implement Module
+Bundle-SymbolicName: TT_PENSIONS_SMS_NewBusiness-implement.module
+Bundle-Version: 2.0.0.qualifier
+Bundle-Vendor: TIBCO Software Inc.
+Require-Bundle: LIB_UTIL_CSF-implement.module;bundle-version="2.0.0",
+ LIB_UTIL_REFERENCEDATA-implement.module;bundle-version="3.0.0"
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-SharedModule: META-INF/module.bwm
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",
+ com.tibco.bw.module; filter:="(&(name=LIB_UTIL_CSF-implement.module)(version=2.0.0))",
+ com.tibco.bw.module; filter:="(&(name=TT_PENSIONS_SMS_NewBusiness-interface.module)(version=2.0.0))",
+ com.tibco.bw.module; filter:="(&(name=LIB_UTIL_REFERENCEDATA-implement.module)(version=3.0.0))",
+ com.tibco.bw.palette; filter:="(name=bw.generalactivities)",
+ com.tibco.bw.sharedresource.model; filter:="(name=bw.httpclient)",
+ com.tibco.bw.binding.model; filter:="(name=bw.rest.reference.binding)"
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Provide-Capability: com.tibco.bw.module; name="TT_PENSIONS_SMS_NewBusiness-implement.module"; version:Version="2.0.0",
+ com.tibco.bw.schemas; ns="http://www.royallondon.com/xsd/internal/tt/pensions/sms/newbusiness",
+ com.tibco.bw.schemas; ns="http://www.royallondon.com/xsd/internal/tt/pensions/sms/newbusiness/v3",
+ com.tibco.bw.schemas; ns="http://www.royallondon.com/xsd/service/pensions/sales/new-business/v7",
+ com.tibco.bw.schemas; ns="http://xmlns.example.com/Default/headerParameters",
+ com.tibco.bw.schemas; ns="http://xmlns.example.com/Default/parameters",
+ com.tibco.bw.schemas; ns="http://xmlns.example.com/SalesManagement/headerParameters",
+ com.tibco.bw.schemas; ns="http://xmlns.example.com/SalesManagement/parameters",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.CreateFlexibleAccessInstruction",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.FindFlexibleAccess",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.CreateFlexibleAccess",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.ModifyFlexibleAccess",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.mod.CreateFlexibleAccessInstruction",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.mod.FindFlexibleAccess",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.mod.CreateFlexibleAccess",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.mod.ModifyFlexibleAccess",
+ com.tibco.bw.resources; name="TT.PENSIONS.SMS.NewBusiness.http",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.mod.DeleteFlexibleAccessInstruction",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.DeleteFlexibleAccessInstruction",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.FindFlexibleAccessInstructions",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.mod.FindFlexibleAccessInstructions",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.mod.ModifyFlexibleAccessInstruction",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.ModifyFlexibleAccessInstruction",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.mod.FindFlexibleAccessInstructionWithdrawalFunds",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.FindFlexibleAccessInstructionWithdrawalFunds",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.mod.UpdateFlexibleAccessInstructionWithdrawalFunds",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.UpdateFlexibleAccessInstructionWithdrawalFunds",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.CreateFlexibleAccessInstructionWithdrawalFunds",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.mod.CreateFlexibleAccessInstructionWithdrawalFunds",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.DeleteFlexibleAccessInstructionWithdrawalFunds",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness.impl.mod.DeleteFlexibleAccessInstructionWithdrawalFunds",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness_v3.impl.CreateWithdrawalInstructions",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness_v3.impl.DeleteWithdrawalInstructions",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness_v3.impl.FindWithdrawalInstructions",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness_v3.impl.ModifyWithdrawalInstructions",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness_v3.impl.mod.CreateWithdrawalInstructions",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness_v3.impl.mod.DeleteWithdrawalInstructions",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness_v3.impl.mod.FindWithdrawalInstructions",
+ com.tibco.bw.processes; name="TT.PENSIONS.SMS.NewBusiness_v3.impl.mod.ModifyWithdrawalInstructions"
+TIBCO-BW-Version: 6.4.1 V22 2017-08-17

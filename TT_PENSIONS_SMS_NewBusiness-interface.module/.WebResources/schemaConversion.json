@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/TT_PENSIONS_SMS_NewBusiness-interface.module/Schemas/AddressDemo_v1.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/secure/api/T1510763866936Converted/JsonSchema"
+    },
+    {
+        "jsonSchemaLocation": "/TT_PENSIONS_SMS_NewBusiness-interface.module/Schemas/AddressDemo_v1.json",
+        "conversionType": "generated",
+        "xsdSchemaTargetNamespace": "/secure/api/T1510764064464Converted/JsonSchema"
+    }
+]}

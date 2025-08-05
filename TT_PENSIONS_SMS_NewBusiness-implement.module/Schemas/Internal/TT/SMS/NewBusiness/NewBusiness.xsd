@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema
+	xmlns:tns="http://www.royallondon.com/xsd/internal/tt/pensions/sms/newbusiness"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+	targetNamespace="http://www.royallondon.com/xsd/internal/tt/pensions/sms/newbusiness"
+	xmlns:ext="http://www.royallondon.com/xsd/service/pensions/sales/new-business/v7">
+
+	<xs:import
+		namespace="http://www.royallondon.com/xsd/service/pensions/sales/new-business/v7"
+		schemaLocation="../../../../External/TT/SMS/NewBusiness/SalesManagement-NewBusiness-v4.xsd" />
+
+	<xs:element name="FindFlexibleAccessInstructionsRequest"
+		type="tns:FindFlexibleAccessInstructionsRequestType" />
+	<xs:complexType name="FindFlexibleAccessInstructionsRequestType">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="NewBusinessId"
+				type="xs:string" />
+			<xs:element maxOccurs="1" minOccurs="0" name="PolicyId"
+				type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="FindFlexibleAccessInstructionsResponse"
+		type="tns:FindFlexibleAccessInstructionsResponseType" />
+	<xs:complexType name="FindFlexibleAccessInstructionsResponseType">
+		<xs:sequence>
+			<xs:element ref="ext:FlexibleAccessInstructions" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="CreateFlexibleAccessInstructionRequest"
+	type="tns:CreateFlexibleAccessInstructionRequestType" />
+	<xs:complexType name="CreateFlexibleAccessInstructionRequestType">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="NewBusinessId"
+				type="xs:string" />
+			<xs:element ref="ext:CreateFlexibleAccessInstruction" />
+				
+		</xs:sequence>
+    </xs:complexType>
+	<xs:element name="CreateFlexibleAccessInstructionResponse"
+	type="tns:CreateFlexibleAccessInstructionResponseType" />
+    <xs:complexType name="CreateFlexibleAccessInstructionResponseType">
+    	<xs:sequence>
+	    	<xs:element ref="ext:NewBusinessIdentifiable"/>    		
+    	</xs:sequence>
+    </xs:complexType>
+	<xs:element name="UpdateFlexibleAccessInstructionRequest"
+	type="tns:UpdateFlexibleAccessInstructionRequestType" />
+	<xs:complexType name="UpdateFlexibleAccessInstructionRequestType">
+    	<xs:sequence>
+    		<xs:element maxOccurs="1" minOccurs="1" name="NewBusinessId" 
+			    type="xs:string" />
+    		<xs:element maxOccurs="1" minOccurs="1" name="FlexibleAccessInstructionId" 
+			    type="xs:string" />
+    		<xs:element ref="ext:UpdateFlexibleAccessInstruction"/>
+    	</xs:sequence>
+    </xs:complexType>
+	<xs:element name="UpdateFlexibleAccessInstructionResponse"
+	type="tns:UpdateFlexibleAccessInstructionResponseType" />
+	<xs:complexType name="UpdateFlexibleAccessInstructionResponseType"/>
+	<xs:element name="DeleteFlexibleAccessInstructionRequest"
+	type="tns:DeleteFlexibleAccessInstructionRequestType" />
+	<xs:complexType name="DeleteFlexibleAccessInstructionRequestType">
+    	<xs:sequence>
+    		<xs:element maxOccurs="1" minOccurs="1" name="NewBusinessId" 
+			    type="xs:string" />
+    		<xs:element maxOccurs="1" minOccurs="1" name="FlexibleAccessInstructionId"
+   			    type="xs:string" />
+    	</xs:sequence>
+    </xs:complexType>
+	<xs:element name="DeleteFlexibleAccessInstructionResponse"
+	type="tns:DeleteFlexibleAccessInstructionResponseType" />
+	<xs:complexType name="DeleteFlexibleAccessInstructionResponseType"/>
+	
+   <xs:element name="FindFlexibleAccessRequest"
+		type="tns:FindFlexibleAccessRequestType" />
+	<xs:complexType name="FindFlexibleAccessRequestType">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="NewBusinessId"
+				type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="FindFlexibleAccessResponse"
+		type="tns:FindFlexibleAccessResponseType" />
+	<xs:complexType name="FindFlexibleAccessResponseType">
+        <xs:sequence>
+	    	<xs:element ref="ext:FlexibleAccessList"/>
+    	</xs:sequence>
+    </xs:complexType>
+	<xs:element name="UpdateFlexibleAccessRequest"
+	type="tns:UpdateFlexibleAccessRequestType" />
+	<xs:complexType name="UpdateFlexibleAccessRequestType">
+    	<xs:sequence>
+    		<xs:element maxOccurs="1" minOccurs="1" name="NewBusinessId" 
+			    type="xs:string" />
+    		<xs:element ref="ext:UpdateFlexibleAccess"/>
+    	</xs:sequence>
+    </xs:complexType>
+	<xs:element name="UpdateFlexibleAccessResponse"
+	type="tns:UpdateFlexibleAccessResponseType" />
+	<xs:complexType name="UpdateFlexibleAccessResponseType"/>
+   
+	
+	
+	<xs:element name="FindFlexibleAccessInstructionWithdrawalFundsRequest"
+		type="tns:FindFlexibleAccessInstructionWithdrawalFundsRequestType" />
+	<xs:complexType name="FindFlexibleAccessInstructionWithdrawalFundsRequestType">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="NewBusinessId"
+				type="xs:string" />
+			<xs:element maxOccurs="1" minOccurs="1" name="FlexibleAccessInstructionId"
+				type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	
+	<xs:element name="FindFlexibleAccessInstructionWithdrawalFundsResponse"
+		type="tns:FindFlexibleAccessInstructionWithdrawalFundsResponseType" />
+	<xs:complexType name="FindFlexibleAccessInstructionWithdrawalFundsResponseType">
+		<xs:sequence>
+			<xs:element ref="ext:WithdrawalFunds" />
+		</xs:sequence>
+	</xs:complexType>
+	  <xs:element name="CreateFlexibleAccessInstructionWithdrawalFundsRequest" type="tns:CreateFlexibleAccessInstructionWithdrawalFundsRequestType"/>
+    <xs:complexType name="CreateFlexibleAccessInstructionWithdrawalFundsRequestType">
+        <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="NewBusinessId"
+				type="xs:string" />
+			<xs:element maxOccurs="1" minOccurs="1" name="FlexibleAccessInstructionId"
+				type="xs:string" />
+            <xs:element minOccurs="0" name="WithdrawalInstructionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="WithdrawalType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FundId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="CreateFlexibleAccessInstructionWithdrawalFundsResponse" type="tns:CreateFlexibleAccessInstructionWithdrawalFundsResponseType"/>
+        <xs:complexType name="CreateFlexibleAccessInstructionWithdrawalFundsResponseType">
+    	<xs:sequence>
+    	<xs:element maxOccurs="1" minOccurs="0" ref="ext:WithdrawalFundIdentifiable"/>
+    		</xs:sequence>
+    </xs:complexType>
+<xs:element name="UpdateFlexibleAccessInstructionWithdrawalFundsRequest" type="tns:UpdateFlexibleAccessInstructionWithdrawalFundsRequestType"/>
+        <xs:complexType name="UpdateFlexibleAccessInstructionWithdrawalFundsRequestType">
+     <xs:sequence>
+     <xs:element maxOccurs="1" minOccurs="1" name="NewBusinessId"
+				type="xs:string" />
+			<xs:element maxOccurs="1" minOccurs="1" name="FlexibleAccessInstructionId"
+				type="xs:string" />
+				<xs:element maxOccurs="1" minOccurs="1" name="ID"
+				type="xs:string" />
+            <xs:element minOccurs="0" name="WithdrawalInstructionType" type="xs:string"/>
+            <xs:element minOccurs="0" name="WithdrawalType" type="xs:string"/>
+            <xs:element minOccurs="0" name="FundId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="UpdateFlexibleAccessInstructionWithdrawalFundsResponse" type="tns:UpdateFlexibleAccessInstructionWithdrawalFundsResponseType"/>
+        <xs:complexType name="UpdateFlexibleAccessInstructionWithdrawalFundsResponseType">
+        </xs:complexType>
+        <xs:element name="DeleteFlexibleAccessInstructionWithdrawalFundsRequest" type="tns:DeleteFlexibleAccessInstructionWithdrawalFundsRequestType"/>
+        <xs:complexType name="DeleteFlexibleAccessInstructionWithdrawalFundsRequestType">
+     <xs:sequence>
+     <xs:element maxOccurs="1" minOccurs="1" name="NewBusinessId"
+				type="xs:string" />
+			<xs:element maxOccurs="1" minOccurs="1" name="FlexibleAccessInstructionId"
+				type="xs:string" />
+				<xs:element maxOccurs="1" minOccurs="1" name="ID"
+				type="xs:string" />
+     </xs:sequence>
+    </xs:complexType>
+    <xs:element name="DeleteFlexibleAccessInstructionWithdrawalFundsResponse" type="tns:DeleteFlexibleAccessInstructionWithdrawalFundsResponseType"/>
+        <xs:complexType name="DeleteFlexibleAccessInstructionWithdrawalFundsResponseType">
+        </xs:complexType>
+      
+</xs:schema>

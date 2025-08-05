@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_mvS5YDsdEeilvJ6K-0l0Jg" name="TT.PENSIONS.SMS.NewBusiness.http.HttpClientResource" type="http:HttpClientConfiguration">
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_mvS5YTsdEeilvJ6K-0l0Jg" httpClientVersion="httpcomponents" useDefaultSSL="true">
+    <substitutionBindings xmi:id="_r_H0QDsdEeilvJ6K-0l0Jg" template="useSingleThreadConnectionManager" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/disableConnectionPooling"/>
+    <substitutionBindings xmi:id="_vIdjwDsdEeilvJ6K-0l0Jg" template="maxTotalConnections" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/maximumTotalConnections"/>
+    <substitutionBindings xmi:id="_weEEwDsdEeilvJ6K-0l0Jg" template="maxTotalConnectionsPerHost" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/maximumTotalConnectionsPerHostRoute"/>
+    <substitutionBindings xmi:id="_0bmRUDsdEeilvJ6K-0l0Jg" template="idleConnectionTimeout" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/idleConnectionTimeoutMs"/>
+    <substitutionBindings xmi:id="_6JIb4DsdEeilvJ6K-0l0Jg" template="acceptRedirect" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/acceptRedirect"/>
+    <substitutionBindings xmi:id="_7X8_cDsdEeilvJ6K-0l0Jg" template="useSingleCookieHeader" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/useSingleCookieHeader"/>
+    <substitutionBindings xmi:id="_8SAz8DsdEeilvJ6K-0l0Jg" template="logReqRespTime" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/logRequestResponseTime"/>
+    <substitutionBindings xmi:id="_-uCKcDsdEeilvJ6K-0l0Jg" template="retryCount" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/retryCount"/>
+    <substitutionBindings xmi:id="__qZsEDsdEeilvJ6K-0l0Jg" template="useNonPreemptiveAuth" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/useNonPreemptiveAuthentication"/>
+    <tcpDetails xmi:id="_mvS5YjsdEeilvJ6K-0l0Jg">
+      <substitutionBindings xmi:id="_xuDF8DsdEeilvJ6K-0l0Jg" template="host" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/defaultHost"/>
+      <substitutionBindings xmi:id="_2L5xUDsdEeilvJ6K-0l0Jg" template="staleCheck" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/staleCheck"/>
+      <substitutionBindings xmi:id="_3rR5YDsdEeilvJ6K-0l0Jg" template="port" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/defaultPort"/>
+      <substitutionBindings xmi:id="_5P01UDsdEeilvJ6K-0l0Jg" template="soTimeout" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/socketTimeoutMs"/>
+      <substitutionBindings xmi:id="_9gD7cDsdEeilvJ6K-0l0Jg" template="connectionTimeout" propName="/resources/TT_PENSIONS_SMS_NewBusiness/NewBusiness/HttpClientSMS/advanced/connectionTimeoutMs"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>

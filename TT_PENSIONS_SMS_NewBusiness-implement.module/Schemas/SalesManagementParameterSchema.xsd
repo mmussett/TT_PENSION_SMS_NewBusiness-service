@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:source="bw.rest" xmlns:tns="http://xmlns.example.com/SalesManagement/parameters" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://xmlns.example.com/SalesManagement/parameters">
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessInstructionsGetParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessInstructionsPutParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessInstructionsPostParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessInstructionsDeleteParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessInstructionsPatchParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessGetParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessPutParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessPostParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessDeleteParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessPatchParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessInstructions-flexibleAccessInstructionIdGetParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="flexibleAccessInstructionId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessInstructions-flexibleAccessInstructionIdPutParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="flexibleAccessInstructionId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessInstructions-flexibleAccessInstructionIdPostParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="flexibleAccessInstructionId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessInstructions-flexibleAccessInstructionIdDeleteParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="flexibleAccessInstructionId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccessInstructions-flexibleAccessInstructionIdPatchParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="flexibleAccessInstructionId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccess-flexibleAccessIdGetParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="flexibleAccessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccess-flexibleAccessIdPutParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccess-flexibleAccessIdPostParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="flexibleAccessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccess-flexibleAccessIdDeleteParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="flexibleAccessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SalesManagement-Quotes-v4.0-api-newBusiness-newBusinessId-flexibleAccess-flexibleAccessIdPatchParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="flexibleAccessId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="SalesManagement-v6-api-newBusiness-newBusinessId-flexibleAccessInstructionsGetParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="0" name="policyId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="flexibleAccessInstructionWithdrawalFundsGetParameters">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="1" name="newBusinessId" type="xs:string"/>
+				<xs:element maxOccurs="1" minOccurs="1" name="flexibleAccessInstructionId" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="flexibleAccessInstructionWithdrawalFundsPutParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="0" name="newBusinessId" type="xs:string"/>
+        <xs:element maxOccurs="1" minOccurs="0" name="flexibleAccessInstructionId" type="xs:string"/>
+        <xs:element maxOccurs="1" minOccurs="0" name="Id" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="flexibleAccessInstructionWithdrawalFundsPostParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="0" name="newBusinessId" type="xs:string"/>
+        <xs:element maxOccurs="1" minOccurs="0" name="flexibleAccessInstructionId" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+   <xs:element name="flexibleAccessInstructionWithdrawalFundsDeleteParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="0" name="newBusinessId" type="xs:string"/>
+        <xs:element maxOccurs="1" minOccurs="0" name="flexibleAccessInstructionId" type="xs:string"/>
+        <xs:element maxOccurs="1" minOccurs="0" name="Id" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
